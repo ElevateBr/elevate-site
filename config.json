@@ -1,0 +1,233 @@
+{
+  "company": {
+    "name": "Elevate",
+    "tagline": "Challenging projects demand visionary professionals",
+    "description": "Software House especializada em soluções empresariais inovadoras"
+  },
+  "contact": {
+    "address": {
+      "street": "Rua Vinte Nove de Setembro, 53, 2º andar",
+      "city": "Campos Elíseos",
+      "state": "Resende",
+      "country": "Rio de Janeiro, Brasil",
+      "coordinates": {
+        "lat": -22.4689,
+        "lng": -44.4469
+      }
+    },
+    "phone": "+55 (24) 99940-2412",
+    "whatsapp": "+55 (24) 99940-2412",
+    "email": "contato@elevatebr.org",
+    "businessHours": "Segunda a Sexta: 9h às 18h"
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/elevatebr",
+    "twitter": "https://twitter.com/elevatebr",
+    "instagram": "https://instagram.com/elevatebr",
+    "facebook": "https://facebook.com/elevatebr"
+  },
+  "products": [
+    {
+      "name": "Seathub",
+      "description": "Discover the ultimate app for finding your perfect workspace whether you're hunting for the ideal spot to work or looking to put your space on the map. Connect, explore, and elevate your work experience like never before!",
+      "url": "https://seathub.net",
+      "icon": "fas fa-search"
+    },
+    {
+      "name": "TapInOut",
+      "description": "TapInOut is the smart, seamless way to manage employee time and attendance no more guesswork, just precision. With GPS tracking, face recognition, and effortless check-in/check-out via smartphone, it ensures the right person is in the right place, at the right time.",
+      "url": "https://tapinout.com",
+      "icon": "fas fa-clock"
+    },
+    {
+      "name": "NotificationApi",
+      "description": "API de gestão de notificações para integrar em seu sistema. Solução robusta e escalável para gerenciar notificações em tempo real.",
+      "url": "#",
+      "icon": "fas fa-bell"
+    },
+    {
+      "name": "Coming Soon",
+      "description": "Our passionate team is cooking up more amazing apps fresh ideas, smarter solutions, and exciting innovations are just around the corner. Stay tuned, the best is yet to come!",
+      "url": "#",
+      "icon": "fas fa-sparkles",
+      "comingSoon": true
+    }
+  ],
+  "services": [
+    {
+      "name": "Team Augmentation",
+      "description": "Fortaleça sua equipe com profissionais especializados em tecnologias modernas.",
+      "features": [
+        "Desenvolvedores especializados",
+        "Flexibilidade de contratação",
+        "Redução de custos"
+      ],
+      "icon": "fas fa-users"
+    },
+    {
+      "name": "Custom Development",
+      "description": "Desenvolvimento de soluções personalizadas com tecnologias modernas e metodologias ágeis.",
+      "features": [
+        "Metodologias ágeis",
+        "Tecnologias modernas",
+        "Qualidade garantida"
+      ],
+      "icon": "fas fa-code"
+    },
+    {
+      "name": "Digital Transformation",
+      "description": "Transformação digital completa para modernizar seus processos e sistemas.",
+      "features": [
+        "Modernização de sistemas",
+        "Automação de processos",
+        "Otimização de performance"
+      ],
+      "icon": "fas fa-chart-line"
+    }
+  ],
+  "partners": [
+    {
+      "name": "Startups",
+      "description": "Empresas inovadoras em crescimento",
+      "icon": "fas fa-building"
+    },
+    {
+      "name": "Corporações",
+      "description": "Grandes empresas em transformação digital",
+      "icon": "fas fa-industry"
+    },
+    {
+      "name": "E-commerce",
+      "description": "Plataformas de vendas online",
+      "icon": "fas fa-shopping-cart"
+    },
+    {
+      "name": "Fintech",
+      "description": "Empresas de tecnologia financeira",
+      "icon": "fas fa-hospital"
+    }
+  ],
+  "topics": {
+    "defaultTopics": [
+      {
+        "id": "default-1",
+        "title": "Nova Tecnologia de IA",
+        "description": "Implementamos inteligência artificial avançada em nossos sistemas para otimizar processos e melhorar a experiência do usuário.",
+        "category": "Tecnologia",
+        "date": "2024-01-15",
+        "icon": "fas fa-robot",
+        "featured": true
+      },
+      {
+        "id": "default-2",
+        "title": "Expansão de Serviços",
+        "description": "Ampliamos nossa gama de serviços para incluir consultoria em transformação digital e implementação de soluções cloud.",
+        "category": "Serviços",
+        "date": "2024-01-10",
+        "icon": "fas fa-cloud",
+        "featured": false
+      },
+      {
+        "id": "default-3",
+        "title": "Parceria Estratégica",
+        "description": "Fechamos uma parceria estratégica com uma empresa líder em tecnologia para oferecer soluções ainda mais robustas.",
+        "category": "Parcerias",
+        "date": "2024-01-05",
+        "icon": "fas fa-handshake",
+        "featured": true
+      }
+    ],
+    "categories": [
+      "Tecnologia",
+      "Serviços",
+      "Parcerias",
+      "Produtos",
+      "Qualidade",
+      "Eventos"
+    ]
+  },
+  "theme": {
+    "colors": {
+      "primary": "#1a1a1a",
+      "secondary": "#2d2d2d",
+      "accent": "#ffd700",
+      "accentLight": "#ffe44d",
+      "accentDark": "#ffb300",
+      "text": "#ffffff",
+      "textGray": "#e0e0e0",
+      "textDark": "#333333",
+      "background": "#0f0f0f",
+      "backgroundLight": "#f8f9fa",
+      "border": "#404040"
+    },
+    "fonts": {
+      "primary": "Inter",
+      "fallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "spacing": {
+      "xs": "0.5rem",
+      "sm": "1rem",
+      "md": "1.5rem",
+      "lg": "2rem",
+      "xl": "3rem",
+      "2xl": "4rem"
+    },
+    "borderRadius": {
+      "sm": "0.375rem",
+      "md": "0.5rem",
+      "lg": "0.75rem",
+      "xl": "1rem"
+    }
+  },
+  "features": {
+    "googleMaps": {
+      "enabled": true,
+      "apiKey": "YOUR_API_KEY_HERE"
+    },
+    "contactForm": {
+      "enabled": true,
+      "autoSave": true,
+      "validation": true
+    },
+    "topics": {
+      "enabled": true,
+      "autoRefresh": true,
+      "maxTopics": 10,
+      "featuredTopics": 3
+    },
+    "animations": {
+      "enabled": true,
+      "duration": "0.3s",
+      "easing": "ease-in-out"
+    }
+  },
+  "seo": {
+    "title": "Elevate - Software House & Soluções Empresariais",
+    "description": "Challenging projects demand visionary professionals. Software House especializada em soluções empresariais inovadoras",
+    "keywords": "software house, desenvolvimento, tecnologia, inovação, soluções empresariais, porto, portugal",
+    "author": "Elevate",
+    "robots": "index, follow",
+    "ogImage": "/images/og-image.jpg",
+    "twitterCard": "summary_large_image"
+  },
+  "map": {
+    "apiKey": "YOUR_GOOGLE_MAPS_API_KEY",
+    "center": {
+      "lat": -22.4689,
+      "lng": -44.4469
+    },
+    "zoom": 15,
+    "marker": {
+      "title": "Elevate",
+      "position": {
+        "lat": -22.4689,
+        "lng": -44.4469
+      }
+    }
+  },
+  "deployment": {
+    "bucket": "elevate-website",
+    "project": "elevate-website",
+    "region": "us-central1"
+  }
+} 

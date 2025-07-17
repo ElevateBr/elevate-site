@@ -1,0 +1,41 @@
+{
+  "id": "code-review-support",
+  "name": {
+    "pt": "Suporte em Revisão de Código e Documentação",
+    "en": "Code and Documentation Review Support",
+    "es": "Soporte en Revisión de Código y Documentación"
+  },
+  "description": {
+    "pt": "Serviços de revisão de código usando ferramentas de IA para identificar erros, otimizar performance e garantir qualidade do software. Além disso, a IA é utilizada para auxiliar na criação de documentação técnica detalhada e precisa, facilitando a manutenção e escalabilidade dos projetos.",
+    "en": "Code review services using AI tools to identify errors, optimize performance, and ensure software quality. Additionally, AI is utilized to assist in the creation of detailed and accurate technical documentation, facilitating project maintenance and scalability.",
+    "es": "Servicios de revisión de código usando herramientas de IA para identificar errores, optimizar el rendimiento y garantizar la calidad del software. Además, la IA se utiliza para ayudar en la creación de documentación técnica detallada y precisa, facilitando el mantenimiento y escalabilidad de los proyectos."
+  },
+  "shortDescription": {
+    "pt": "Revisão de código e documentação com IA",
+    "en": "AI-powered code and documentation review",
+    "es": "Revisión de código y documentación con IA"
+  },
+  "icon": "fas fa-search",
+  "category": "development",
+  "status": "active",
+  "features": {
+    "pt": [
+      "Identificação de erros com IA",
+      "Otimização de performance",
+      "Garantia de qualidade",
+      "Documentação técnica detalhada"
+    ],
+    "en": [
+      "AI-powered error identification",
+      "Performance optimization",
+      "Quality assurance",
+      "Detailed technical documentation"
+    ],
+    "es": [
+      "Identificación de errores con IA",
+      "Optimización de rendimiento",
+      "Garantía de calidad",
+      "Documentación técnica detallada"
+    ]
+  }
+} 

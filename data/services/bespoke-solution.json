@@ -1,0 +1,41 @@
+{
+  "id": "bespoke-solution",
+  "name": {
+    "pt": "Solução Personalizada",
+    "en": "Bespoke Solution",
+    "es": "Solución Personalizada"
+  },
+  "description": {
+    "pt": "Nossa equipe projeta e implementa software personalizado para suas necessidades. Focamos em interfaces amigáveis ao usuário, código eficiente e soluções escaláveis para apoiar o crescimento do seu negócio.",
+    "en": "Our team designs and implements software tailored to your needs. We focus on user-friendly interfaces, efficient code, and scalable solutions to support your business growth.",
+    "es": "Nuestro equipo diseña e implementa software adaptado a sus necesidades. Nos enfocamos en interfaces amigables para el usuario, código eficiente y soluciones escalables para apoyar el crecimiento de su negocio."
+  },
+  "shortDescription": {
+    "pt": "Software personalizado para suas necessidades",
+    "en": "Custom software for your needs",
+    "es": "Software personalizado para sus necesidades"
+  },
+  "icon": "fas fa-code",
+  "category": "development",
+  "status": "active",
+  "features": {
+    "pt": [
+      "Interfaces amigáveis ao usuário",
+      "Código eficiente e otimizado",
+      "Soluções escaláveis",
+      "Suporte ao crescimento do negócio"
+    ],
+    "en": [
+      "User-friendly interfaces",
+      "Efficient and optimized code",
+      "Scalable solutions",
+      "Business growth support"
+    ],
+    "es": [
+      "Interfaces amigables para el usuario",
+      "Código eficiente y optimizado",
+      "Soluciones escalables",
+      "Apoyo al crecimiento del negocio"
+    ]
+  }
+} 

@@ -1,0 +1,62 @@
+{
+  "id": "backend-developer",
+  "title": {
+    "pt": "Desenvolvedor Backend",
+    "en": "Backend Developer",
+    "es": "Desarrollador Backend"
+  },
+  "type": "Full-time",
+  "location": "Híbrido",
+  "description": {
+    "pt": "Procuramos um desenvolvedor Backend para desenvolver APIs robustas e escaláveis. Você trabalhará com tecnologias modernas como Node.js, Python ou Java.",
+    "en": "We are looking for a Backend developer to develop robust and scalable APIs. You will work with modern technologies such as Node.js, Python or Java.",
+    "es": "Buscamos un desarrollador Backend para desarrollar APIs robustas y escalables. Trabajarás con tecnologías modernas como Node.js, Python o Java."
+  },
+  "requirements": {
+    "pt": [
+      "Experiência com desenvolvimento de APIs",
+      "Conhecimento em Node.js, Python ou Java",
+      "Experiência com bancos de dados SQL e NoSQL",
+      "Conhecimento em Docker e Kubernetes",
+      "Experiência com testes automatizados"
+    ],
+    "en": [
+      "Experience with API development",
+      "Knowledge in Node.js, Python or Java",
+      "Experience with SQL and NoSQL databases",
+      "Knowledge in Docker and Kubernetes",
+      "Experience with automated testing"
+    ],
+    "es": [
+      "Experiencia con desarrollo de APIs",
+      "Conocimiento en Node.js, Python o Java",
+      "Experiencia con bases de datos SQL y NoSQL",
+      "Conocimiento en Docker y Kubernetes",
+      "Experiencia con pruebas automatizadas"
+    ]
+  },
+  "benefits": {
+    "pt": [
+      "Trabalho híbrido",
+      "Horário flexível",
+      "Plano de saúde",
+      "Vale refeição",
+      "Plano de carreira"
+    ],
+    "en": [
+      "Hybrid work",
+      "Flexible hours",
+      "Health plan",
+      "Meal allowance",
+      "Career plan"
+    ],
+    "es": [
+      "Trabajo híbrido",
+      "Horario flexible",
+      "Plan de salud",
+      "Vale de comida",
+      "Plan de carrera"
+    ]
+  },
+  "date": "2024-01-10"
+} 

@@ -1,0 +1,43 @@
+{
+  "id": "seathub",
+  "name": {
+    "pt": "Seathub",
+    "en": "Seathub",
+    "es": "Seathub"
+  },
+  "description": {
+    "pt": "Descubra o app definitivo para encontrar seu workspace perfeito, seja você caçando o local ideal para trabalhar ou querendo colocar seu espaço no mapa. Conecte, explore e eleve sua experiência de trabalho como nunca antes!",
+    "en": "Discover the ultimate app for finding your perfect workspace whether you're hunting for the ideal spot to work or looking to put your space on the map. Connect, explore, and elevate your work experience like never before!",
+    "es": "Descubre la aplicación definitiva para encontrar tu espacio de trabajo perfecto, ya sea que estés buscando el lugar ideal para trabajar o quieras poner tu espacio en el mapa. Conecta, explora y eleva tu experiencia de trabajo como nunca antes!"
+  },
+  "shortDescription": {
+    "pt": "Encontre seu workspace perfeito",
+    "en": "Find your perfect workspace",
+    "es": "Encuentra tu espacio de trabajo perfecto"
+  },
+  "url": "https://seathub.net",
+  "image": "images/products/seathub-logo.png",
+  "icon": "fas fa-search",
+  "category": "workspace",
+  "status": "active",
+  "features": {
+    "pt": [
+      "Busca inteligente de workspaces",
+      "Avaliações e reviews",
+      "Reservas online",
+      "Mapa interativo"
+    ],
+    "en": [
+      "Smart workspace search",
+      "Reviews and ratings",
+      "Online bookings",
+      "Interactive map"
+    ],
+    "es": [
+      "Búsqueda inteligente de espacios",
+      "Reseñas y calificaciones",
+      "Reservas en línea",
+      "Mapa interactivo"
+    ]
+  }
+} 

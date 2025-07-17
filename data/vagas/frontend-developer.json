@@ -1,0 +1,62 @@
+{
+  "id": "frontend-developer",
+  "title": {
+    "pt": "Desenvolvedor Frontend",
+    "en": "Frontend Developer",
+    "es": "Desarrollador Frontend"
+  },
+  "type": "Full-time",
+  "location": "Remoto",
+  "description": {
+    "pt": "Estamos procurando um desenvolvedor Frontend experiente para se juntar à nossa equipe. Você será responsável por criar interfaces modernas e responsivas usando tecnologias como React, Vue.js ou Angular.",
+    "en": "We are looking for an experienced Frontend developer to join our team. You will be responsible for creating modern and responsive interfaces using technologies such as React, Vue.js or Angular.",
+    "es": "Estamos buscando un desarrollador Frontend experimentado para unirse a nuestro equipo. Serás responsable de crear interfaces modernas y responsivas usando tecnologías como React, Vue.js o Angular."
+  },
+  "requirements": {
+    "pt": [
+      "Experiência sólida com JavaScript/TypeScript",
+      "Conhecimento em React, Vue.js ou Angular",
+      "Familiaridade com CSS moderno (Flexbox, Grid)",
+      "Experiência com Git e controle de versão",
+      "Boa comunicação e trabalho em equipe"
+    ],
+    "en": [
+      "Solid experience with JavaScript/TypeScript",
+      "Knowledge in React, Vue.js or Angular",
+      "Familiarity with modern CSS (Flexbox, Grid)",
+      "Experience with Git and version control",
+      "Good communication and teamwork"
+    ],
+    "es": [
+      "Experiencia sólida con JavaScript/TypeScript",
+      "Conocimiento en React, Vue.js o Angular",
+      "Familiaridad con CSS moderno (Flexbox, Grid)",
+      "Experiencia con Git y control de versiones",
+      "Buena comunicación y trabajo en equipo"
+    ]
+  },
+  "benefits": {
+    "pt": [
+      "Trabalho remoto",
+      "Horário flexível",
+      "Plano de saúde",
+      "Vale refeição",
+      "Plano de carreira"
+    ],
+    "en": [
+      "Remote work",
+      "Flexible hours",
+      "Health plan",
+      "Meal allowance",
+      "Career plan"
+    ],
+    "es": [
+      "Trabajo remoto",
+      "Horario flexible",
+      "Plan de salud",
+      "Vale de comida",
+      "Plan de carrera"
+    ]
+  },
+  "date": "2024-01-15"
+} 

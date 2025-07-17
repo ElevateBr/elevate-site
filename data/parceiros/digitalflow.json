@@ -1,0 +1,15 @@
+{
+  "id": "DigitalFlow",
+  "icon": "fas fa-network-wired",
+  "image": "",
+  "name": {
+    "pt": "DigitalFlow",
+    "en": "DigitalFlow",
+    "es": "DigitalFlow"
+  },
+  "description": {
+    "pt": "Fluxo Digital Inteligente",
+    "en": "Intelligent Digital Flow",
+    "es": "Flujo Digital Inteligente"
+  }
+} 

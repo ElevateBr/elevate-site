@@ -1,0 +1,41 @@
+{
+  "id": "digital-transformation",
+  "name": {
+    "pt": "Consultoria em Transformação Digital",
+    "en": "Digital Transformation Consulting",
+    "es": "Consultoría en Transformación Digital"
+  },
+  "description": {
+    "pt": "Serviços de consultoria para empresas que buscam implementar ou aprimorar suas estratégias de transformação digital. Nossos consultores ajudam a identificar oportunidades de inovação, otimizar processos e integrar novas tecnologias para melhorar a eficiência e competitividade.",
+    "en": "Consulting services for companies looking to implement or enhance their digital transformation strategies. Consultants help identify innovation opportunities, optimize processes, and integrate new technologies to improve efficiency and competitiveness.",
+    "es": "Servicios de consultoría para empresas que buscan implementar o mejorar sus estrategias de transformación digital. Nuestros consultores ayudan a identificar oportunidades de innovación, optimizar procesos e integrar nuevas tecnologías para mejorar la eficiencia y competitividad."
+  },
+  "shortDescription": {
+    "pt": "Estratégias de transformação digital",
+    "en": "Digital transformation strategies",
+    "es": "Estrategias de transformación digital"
+  },
+  "icon": "fas fa-digital-tachograph",
+  "category": "consulting",
+  "status": "active",
+  "features": {
+    "pt": [
+      "Identificação de oportunidades",
+      "Otimização de processos",
+      "Integração de tecnologias",
+      "Melhoria de competitividade"
+    ],
+    "en": [
+      "Opportunity identification",
+      "Process optimization",
+      "Technology integration",
+      "Competitiveness improvement"
+    ],
+    "es": [
+      "Identificación de oportunidades",
+      "Optimización de procesos",
+      "Integración de tecnologías",
+      "Mejora de competitividad"
+    ]
+  }
+} 

@@ -1,0 +1,43 @@
+{
+  "id": "tapinout",
+  "name": {
+    "pt": "TapInOut",
+    "en": "TapInOut",
+    "es": "TapInOut"
+  },
+  "description": {
+    "pt": "TapInOut é a forma inteligente e perfeita de gerenciar o tempo e presença dos funcionários - sem mais suposições, apenas precisão. Com rastreamento GPS, reconhecimento facial e check-in/check-out sem esforço via smartphone, garante que a pessoa certa esteja no lugar certo, na hora certa.",
+    "en": "TapInOut is the smart, seamless way to manage employee time and attendance no more guesswork, just precision. With GPS tracking, face recognition, and effortless check-in/check-out via smartphone, it ensures the right person is in the right place, at the right time.",
+    "es": "TapInOut es la forma inteligente y perfecta de gestionar el tiempo y la asistencia de los empleados - sin más suposiciones, solo precisión. Con seguimiento GPS, reconocimiento facial y check-in/check-out sin esfuerzo vía smartphone, asegura que la persona correcta esté en el lugar correcto, en el momento correcto."
+  },
+  "shortDescription": {
+    "pt": "Gestão inteligente de ponto eletrônico",
+    "en": "Smart time and attendance management",
+    "es": "Gestión inteligente de tiempo y asistencia"
+  },
+  "url": "https://tapinout.com",
+  "image": "images/products/tapinout-logo.png",
+  "icon": "fas fa-clock",
+  "category": "attendance",
+  "status": "active",
+  "features": {
+    "pt": [
+      "Reconhecimento facial",
+      "Rastreamento GPS",
+      "Check-in/check-out via smartphone",
+      "Relatórios detalhados"
+    ],
+    "en": [
+      "Facial recognition",
+      "GPS tracking",
+      "Smartphone check-in/check-out",
+      "Detailed reports"
+    ],
+    "es": [
+      "Reconocimiento facial",
+      "Seguimiento GPS",
+      "Check-in/check-out vía smartphone",
+      "Reportes detallados"
+    ]
+  }
+} 

@@ -1,0 +1,41 @@
+{
+  "id": "cloud-architecture",
+  "name": {
+    "pt": "Arquitetura em Nuvem",
+    "en": "Cloud Architecture",
+    "es": "Arquitectura en la Nube"
+  },
+  "description": {
+    "pt": "Nossa equipe ajuda a projetar e implementar soluções em nuvem escaláveis adaptadas ao seu negócio. Focamos em simplificar processos e aumentar a eficiência com uma abordagem estratégica.",
+    "en": "Our team helps design and implement scalable cloud solutions tailored to your business. We focus on simplifying processes and boosting efficiency with a strategic approach.",
+    "es": "Nuestro equipo ayuda a diseñar e implementar soluciones en la nube escalables adaptadas a su negocio. Nos enfocamos en simplificar procesos y aumentar la eficiencia con un enfoque estratégico."
+  },
+  "shortDescription": {
+    "pt": "Soluções em nuvem escaláveis",
+    "en": "Scalable cloud solutions",
+    "es": "Soluciones en la nube escalables"
+  },
+  "icon": "fas fa-cloud",
+  "category": "cloud",
+  "status": "active",
+  "features": {
+    "pt": [
+      "Soluções escaláveis",
+      "Simplificação de processos",
+      "Aumento de eficiência",
+      "Abordagem estratégica"
+    ],
+    "en": [
+      "Scalable solutions",
+      "Process simplification",
+      "Efficiency boost",
+      "Strategic approach"
+    ],
+    "es": [
+      "Soluciones escalables",
+      "Simplificación de procesos",
+      "Aumento de eficiencia",
+      "Enfoque estratégico"
+    ]
+  }
+} 

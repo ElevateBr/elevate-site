@@ -1,0 +1,38 @@
+{
+  "id": "digital-incubator",
+  "name": {
+    "pt": "Incubadora Digital",
+    "en": "Digital Incubator",
+    "es": "Incubadora Digital"
+  },
+  "description": {
+    "pt": "Nossa incubadora digital oferece um ambiente completo para startups e empreendedores digitais. Fornecemos mentoria especializada, recursos técnicos e networking estratégico para transformar ideias inovadoras em negócios prósperos. Nossa abordagem holística inclui validação de mercado, desenvolvimento de MVP, estratégias de crescimento e conexões com investidores.",
+    "en": "Our digital incubator provides a comprehensive environment for startups and digital entrepreneurs. We offer specialized mentoring, technical resources, and strategic networking to transform innovative ideas into thriving businesses. Our holistic approach includes market validation, MVP development, growth strategies, and investor connections.",
+    "es": "Nuestra incubadora digital proporciona un entorno integral para startups y emprendedores digitales. Ofrecemos mentoría especializada, recursos técnicos y networking estratégico para transformar ideas innovadoras en negocios prósperos. Nuestro enfoque holístico incluye validación de mercado, desarrollo de MVP, estrategias de crecimiento y conexiones con inversores."
+  },
+  "shortDescription": {
+    "pt": "Transformando ideias em negócios digitais",
+    "en": "Transforming ideas into digital businesses",
+    "es": "Transformando ideas en negocios digitales"
+  },
+  "icon": "fas fa-rocket",
+  "category": "incubation",
+  "status": "active",
+  "features": {
+    "pt": [
+      "Mentoria especializada",
+      "Recursos técnicos",
+      "Networking estratégico"
+    ],
+    "en": [
+      "Specialized mentoring",
+      "Technical resources",
+      "Strategic networking"
+    ],
+    "es": [
+      "Mentoría especializada",
+      "Recursos técnicos",
+      "Networking estratégico"
+    ]
+  }
+} 

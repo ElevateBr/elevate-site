@@ -1,0 +1,15 @@
+{
+  "id": "TechCorp",
+  "icon": "fas fa-cogs",
+  "image": "",
+  "name": {
+    "pt": "TechCorp",
+    "en": "TechCorp",
+    "es": "TechCorp"
+  },
+  "description": {
+    "pt": "Soluções de Tecnologia Avançada",
+    "en": "Advanced Technology Solutions",
+    "es": "Soluciones de Tecnología Avanzada"
+  }
+} 

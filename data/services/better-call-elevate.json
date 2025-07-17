@@ -1,0 +1,41 @@
+{
+  "id": "better-call-elevate",
+  "name": {
+    "pt": "Better Call Elevate - Especialistas",
+    "en": "Better Call Elevate - Subject Matter Experts",
+    "es": "Better Call Elevate - Expertos en la Materia"
+  },
+  "description": {
+    "pt": "Tenha acesso a profissionais experientes em diversos campos para suporte abrangente, incluindo sessões de brainstorming, esclarecimentos detalhados, revisões de projetos e orientação técnica especializada. Este serviço é perfeito para profissionais que buscam aprofundar sua expertise com insights especializados e receber feedback de alta qualidade que pode impulsionar a inovação e excelência em seus projetos. Nossos especialistas não apenas fornecem respostas, mas também ajudam a desbloquear novas ideias e estratégias, garantindo que você se mantenha à frente em sua indústria.",
+    "en": "Gain access to seasoned professionals across diverse fields for comprehensive support, including brainstorming sessions, detailed clarifications, project reviews, and expert technical guidance. This service is perfect for professionals aiming to deepen their expertise with specialized insights and receive high-quality feedback that can drive innovation and excellence in their projects. Our SMEs not only provide answers but also help unlock new ideas and strategies, ensuring you stay ahead in your industry.",
+    "es": "Obtenga acceso a profesionales experimentados en diversos campos para apoyo integral, incluyendo sesiones de lluvia de ideas, aclaraciones detalladas, revisiones de proyectos y orientación técnica especializada. Este servicio es perfecto para profesionales que buscan profundizar su experiencia con conocimientos especializados y recibir retroalimentación de alta calidad que puede impulsar la innovación y excelencia en sus proyectos. Nuestros expertos no solo proporcionan respuestas, sino que también ayudan a desbloquear nuevas ideas y estrategias, garantizando que se mantenga a la vanguardia en su industria."
+  },
+  "shortDescription": {
+    "pt": "Acesso a especialistas experientes",
+    "en": "Access to experienced specialists",
+    "es": "Acceso a especialistas experimentados"
+  },
+  "icon": "fas fa-users",
+  "category": "consulting",
+  "status": "active",
+  "features": {
+    "pt": [
+      "Sessões de brainstorming",
+      "Esclarecimentos detalhados",
+      "Revisões de projetos",
+      "Orientação técnica especializada"
+    ],
+    "en": [
+      "Brainstorming sessions",
+      "Detailed clarifications",
+      "Project reviews",
+      "Expert technical guidance"
+    ],
+    "es": [
+      "Sesiones de lluvia de ideas",
+      "Aclaraciones detalladas",
+      "Revisiones de proyectos",
+      "Orientación técnica especializada"
+    ]
+  }
+} 

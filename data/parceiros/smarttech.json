@@ -1,0 +1,15 @@
+{
+  "id": "SmartTech",
+  "icon": "fas fa-robot",
+  "image": "",
+  "name": {
+    "pt": "SmartTech",
+    "en": "SmartTech",
+    "es": "SmartTech"
+  },
+  "description": {
+    "pt": "Tecnologia Inteligente",
+    "en": "Smart Technology",
+    "es": "Tecnología Inteligente"
+  }
+} 

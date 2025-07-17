@@ -1,0 +1,15 @@
+{
+  "id": "Innovate",
+  "icon": "fas fa-lightbulb",
+  "image": "",
+  "name": {
+    "pt": "Innovate",
+    "en": "Innovate",
+    "es": "Innovate"
+  },
+  "description": {
+    "pt": "Inovação e Criatividade",
+    "en": "Innovation and Creativity",
+    "es": "Innovación y Creatividad"
+  }
+} 

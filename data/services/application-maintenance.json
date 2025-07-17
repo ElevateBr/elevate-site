@@ -1,0 +1,41 @@
+{
+  "id": "application-maintenance",
+  "name": {
+    "pt": "Manutenção e Suporte de Aplicações",
+    "en": "Application Maintenance & Support",
+    "es": "Mantenimiento y Soporte de Aplicaciones"
+  },
+  "description": {
+    "pt": "Mantenha suas aplicações funcionando perfeitamente. Nossa equipe garante que seu software permaneça atualizado e funcional, fornecendo suporte contínuo e solução de problemas para minimizar o tempo de inatividade.",
+    "en": "Keep your applications running smoothly. Our team ensures your software stays updated and functional, providing ongoing support and troubleshooting to minimize downtime.",
+    "es": "Mantenga sus aplicaciones funcionando perfectamente. Nuestro equipo garantiza que su software permanezca actualizado y funcional, proporcionando soporte continuo y solución de problemas para minimizar el tiempo de inactividad."
+  },
+  "shortDescription": {
+    "pt": "Suporte contínuo para suas aplicações",
+    "en": "Ongoing support for your applications",
+    "es": "Soporte continuo para sus aplicaciones"
+  },
+  "icon": "fas fa-tools",
+  "category": "support",
+  "status": "active",
+  "features": {
+    "pt": [
+      "Suporte contínuo",
+      "Atualizações regulares",
+      "Solução de problemas",
+      "Minimização de tempo de inatividade"
+    ],
+    "en": [
+      "Ongoing support",
+      "Regular updates",
+      "Troubleshooting",
+      "Downtime minimization"
+    ],
+    "es": [
+      "Soporte continuo",
+      "Actualizaciones regulares",
+      "Solución de problemas",
+      "Minimización del tiempo de inactividad"
+    ]
+  }
+} 
