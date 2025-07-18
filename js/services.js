@@ -72,6 +72,9 @@ class ServicesManager {
                 <li><a href="#servicos">${service.name[this.currentLanguage]}</a></li>
             `).join('');
         }
+        
+        // Setup mobile expansion functionality
+        this.setupMobileExpansion();
     }
 
     createServiceCard(service) {
@@ -93,8 +96,12 @@ class ServicesManager {
             return '';
         }
         
-        const cardHTML = `
-            <div class="servico-card" data-service-id="${service.id}">
+        // O botão de expandir só aparece no mobile
+        const isMobile = typeof window !== 'undefined' ? window.innerWidth <= 768 : false;
+        // O botão sempre aparece, mas a posição depende do estado do card
+        const expandBtn = `<span class="servico-expand-btn" tabindex="0" aria-label="${this.getText('services.see_more')}">${this.getText('services.see_more')}</span>`;
+        return `
+            <div class="servico-card compact" data-service-id="${service.id}">
                 <div class="servico-header">
                     <div class="servico-icon">
                         <i class="${service.icon}"></i>
@@ -102,6 +109,7 @@ class ServicesManager {
                     <h3 class="servico-title">${service.name[lang]}</h3>
                 </div>
                 <p class="servico-description">${service.description[lang]}</p>
+                ${isMobile ? expandBtn : ''}
                 <div class="servico-features">
                     ${service.features[lang].map(feature => `
                         <span class="feature-tag">${feature}</span>
@@ -109,8 +117,6 @@ class ServicesManager {
                 </div>
             </div>
         `;
-        
-        return cardHTML;
     }
 
     setupEventListeners() {
@@ -137,6 +143,16 @@ class ServicesManager {
                 'pt': 'Em Breve',
                 'en': 'Coming Soon',
                 'es': 'Próximamente'
+            },
+            'services.see_more': {
+                'pt': 'Ver mais',
+                'en': 'See more',
+                'es': 'Ver más'
+            },
+            'services.see_less': {
+                'pt': 'Ver menos',
+                'en': 'See less',
+                'es': 'Ver menos'
             }
         };
         
@@ -147,6 +163,85 @@ class ServicesManager {
         const loadingElement = document.getElementById('servicos-loading');
         if (loadingElement) {
             loadingElement.style.display = 'none';
+        }
+    }
+
+    setupMobileExpansion() {
+        const serviceCards = document.querySelectorAll('.servico-card');
+        serviceCards.forEach(card => {
+            // Remover listeners antigos
+            card.replaceWith(card.cloneNode(true));
+        });
+        // Re-selecionar após clone
+        const newCards = document.querySelectorAll('.servico-card');
+        newCards.forEach(card => {
+            // Clique no card (mobile): expande/contrai
+            card.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    // Só expande se não clicar no botão
+                    if (!e.target.classList.contains('servico-expand-btn')) {
+                        this.toggleServiceExpansion(card);
+                    }
+                }
+            });
+            // Clique no botão de expandir/contrair
+            const expandBtn = card.querySelector('.servico-expand-btn');
+            if (expandBtn) {
+                expandBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.toggleServiceExpansion(card);
+                });
+                expandBtn.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        this.toggleServiceExpansion(card);
+                    }
+                });
+            }
+        });
+    }
+    
+    toggleServiceExpansion(clickedCard) {
+        const allCards = document.querySelectorAll('.servico-card');
+        
+        allCards.forEach(card => {
+            if (card === clickedCard) {
+                // Toggle the clicked card
+                if (card.classList.contains('expanded')) {
+                    card.classList.remove('expanded');
+                    card.classList.add('compact');
+                    // Atualizar botão para "Ver mais"
+                    const btn = card.querySelector('.servico-expand-btn');
+                    if (btn) btn.textContent = this.getText('services.see_more');
+                } else {
+                    card.classList.remove('compact');
+                    card.classList.add('expanded');
+                    // Atualizar botão para "Ver menos" e mover para depois das features
+                    let btn = card.querySelector('.servico-expand-btn');
+                    if (btn) btn.textContent = this.getText('services.see_less');
+                    // Mover botão para depois das features
+                    const features = card.querySelector('.servico-features');
+                    if (btn && features) features.after(btn);
+                }
+            } else {
+                // Collapse all other cards
+                card.classList.remove('expanded');
+                card.classList.add('compact');
+                // Atualizar botão para "Ver mais"
+                const btn = card.querySelector('.servico-expand-btn');
+                if (btn) btn.textContent = this.getText('services.see_more');
+            }
+        });
+        
+        // Scroll to the expanded card if it's not fully visible
+        if (clickedCard.classList.contains('expanded')) {
+            setTimeout(() => {
+                clickedCard.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center' 
+                });
+            }, 300);
         }
     }
 

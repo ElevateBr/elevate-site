@@ -362,6 +362,9 @@ class VagasManager {
         if (recruitmentSection) {
             recruitmentSection.style.display = 'none';
         }
+        
+        // Hide navigation links for careers
+        this.hideCareersNavLinks();
     }
 
     showRecruitmentSection() {
@@ -369,6 +372,9 @@ class VagasManager {
         if (recruitmentSection) {
             recruitmentSection.style.display = 'block';
         }
+        
+        // Show navigation links for careers
+        this.showCareersNavLinks();
     }
 
     hideFloatingButton() {
@@ -383,6 +389,36 @@ class VagasManager {
         if (floatingButton) {
             floatingButton.style.display = 'flex';
         }
+    }
+
+    hideCareersNavLinks() {
+        // Hide all navigation links that point to #recrutamento
+        const careersLinks = document.querySelectorAll('a[href="#recrutamento"]');
+        careersLinks.forEach(link => {
+            const navItem = link.closest('.nav-item');
+            const listItem = link.closest('li');
+            
+            if (navItem) {
+                navItem.style.display = 'none';
+            } else if (listItem) {
+                listItem.style.display = 'none';
+            }
+        });
+    }
+
+    showCareersNavLinks() {
+        // Show all navigation links that point to #recrutamento
+        const careersLinks = document.querySelectorAll('a[href="#recrutamento"]');
+        careersLinks.forEach(link => {
+            const navItem = link.closest('.nav-item');
+            const listItem = link.closest('li');
+            
+            if (navItem) {
+                navItem.style.display = 'block';
+            } else if (listItem) {
+                listItem.style.display = 'block';
+            }
+        });
     }
 
     setupFloatingButton() {

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initNavigation();
     initSmoothScrolling();
     initScrollEffects();
-    initMobileMenu();
+
     initFormValidation();
     initAutoSave();
 });
@@ -78,35 +78,7 @@ function initScrollEffects() {
     animateElements.forEach(el => observer.observe(el));
 }
 
-// Mobile menu functionality
-function initMobileMenu() {
-    const navbarToggle = document.getElementById('navbar-toggle');
-    const navbarMenu = document.getElementById('navbar-menu');
-    
-    if (navbarToggle && navbarMenu) {
-        navbarToggle.addEventListener('click', () => {
-            navbarMenu.classList.toggle('active');
-            navbarToggle.classList.toggle('active');
-        });
-        
-        // Close menu when clicking on a link
-        const navLinks = navbarMenu.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navbarMenu.classList.remove('active');
-                navbarToggle.classList.remove('active');
-            });
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!navbarToggle.contains(e.target) && !navbarMenu.contains(e.target)) {
-                navbarMenu.classList.remove('active');
-                navbarToggle.classList.remove('active');
-            }
-        });
-    }
-}
+
 
 // Form validation
 function initFormValidation() {
