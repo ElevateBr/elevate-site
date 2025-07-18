@@ -144,7 +144,7 @@ function initMap() {
 // Load Google Maps API
 function loadGoogleMapsAPI() {
     const script = document.createElement('script');
-    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyANfzDDXBe64Ctu7buytvGYioLK-mFt5OY&callback=initMap&loading=async&libraries=marker';
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCbYk0AmkAo24326xM5oHZBa3Rr2u9q4Ok&callback=initMap&loading=async&libraries=marker';
     script.async = true;
     script.defer = true;
     document.head.appendChild(script);

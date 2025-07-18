@@ -1,0 +1,33 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+QUICK_START.md
+EMAILJS_SETUP.md
+FORMSPREE_SETUP.md
+GOOGLE_MAPS_SETUP.md
+SISTEMA_VAGAS_DINAMICO.md
+SOLUCAO_VAGAS_NAO_VISIVEIS.md
+
+# Development files
+deploy.sh
+
+# Docker files (to avoid copying them into the container)
+Dockerfile
+.dockerignore
+nginx.conf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log 
