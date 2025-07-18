@@ -169,6 +169,9 @@ class PartnersManager {
             this.partnersContainer.innerHTML = partners.map(partner => this.createPartnerCard(partner)).join('');
             this.partnersContainer.style.transform = 'none';
         }
+        
+        // Adicionar event listeners para clique nos parceiros
+        this.addPartnerClickListeners();
     }
 
     startCarousel() {
@@ -227,8 +230,12 @@ class PartnersManager {
         // Garantir que sempre tenha um ícone válido
         const icon = partner.icon || 'fas fa-building';
         
+        // Adicionar classe de clique se tiver website
+        const clickableClass = partner.website ? 'clickable' : '';
+        const cursorStyle = partner.website ? 'cursor: pointer;' : '';
+        
         return `
-            <div class="partner-card" data-partner-id="${partner.id}">
+            <div class="partner-card ${clickableClass}" data-partner-id="${partner.id}" data-website="${partner.website || ''}" style="${cursorStyle}">
                 <div class="partner-logo">
                     ${partner.image ? 
                         `<img src="${partner.image}" alt="${partner.id}">` : 
@@ -274,6 +281,32 @@ class PartnersManager {
         if (partnersSection) {
             partnersSection.style.display = 'block';
         }
+    }
+
+    addPartnerClickListeners() {
+        if (!this.partnersContainer) return;
+        
+        const partnerCards = this.partnersContainer.querySelectorAll('.partner-card.clickable');
+        
+        partnerCards.forEach(card => {
+            card.addEventListener('click', (e) => {
+                const website = card.getAttribute('data-website');
+                if (website) {
+                    // Abrir em nova aba
+                    window.open(website, '_blank', 'noopener,noreferrer');
+                }
+            });
+            
+            // Adicionar efeito hover
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'scale(1.05)';
+                card.style.transition = 'transform 0.2s ease';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'scale(1)';
+            });
+        });
     }
 
     showError() {

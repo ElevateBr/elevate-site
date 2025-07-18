@@ -1,0 +1,16 @@
+{
+  "id": "AvisRara",
+  "icon": "fas fa-leaf",
+  "image": "images/parceiros/logo-avisrara.png",
+  "name": {
+    "pt": "AvisRara Ecoturismo",
+    "en": "AvisRara Ecoturismo",
+    "es": "AvisRara Ecoturismo"
+  },
+  "description": {
+    "pt": "Empresa de Ecoturismo Sustentável",
+    "en": "Sustainable Ecotourism Company",
+    "es": "Empresa de Ecoturismo Sostenible"
+  },
+  "website": "https://avisraraecoturismo.com.br/"
+} 

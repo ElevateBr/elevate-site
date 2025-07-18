@@ -452,6 +452,48 @@ html {
     .sm\:flex-column { flex-direction: column; }
     
     .sm\:text-center { text-align: center; }
-    .sm\:text-left { text-align: left; }
-    .sm\:text-right { text-align: right; }
+.sm\:text-left { text-align: left; }
+.sm\:text-right { text-align: right; }
+
+/* Partner card clickable styles */
+.partner-card.clickable {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.partner-card.clickable:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+}
+
+.partner-card.clickable::after {
+    content: '🔗';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--accent-yellow);
+    color: var(--primary-black);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.partner-card.clickable:hover::after {
+    opacity: 1;
+}
+
+.partner-card.clickable .partner-logo {
+    transition: filter 0.3s ease;
+}
+
+.partner-card.clickable:hover .partner-logo {
+    filter: brightness(1.1);
+}
 } 

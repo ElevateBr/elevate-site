@@ -3,13 +3,14 @@
   "icon": "fas fa-rocket",
   "image": "images/parceiros/logo-hyviral.png",
   "name": {
-    "pt": "",
-    "en": "",
-    "es": ""
+    "pt": "Hyviral",
+    "en": "Hyviral",
+    "es": "Hyviral"
   },
   "description": {
     "pt": "Plataforma de Marketing Digital",
     "en": "Digital Marketing Platform",
     "es": "Plataforma de Marketing Digital"
-  }
+  },
+  "website": "https://www.hyviral.com/"
 } 
