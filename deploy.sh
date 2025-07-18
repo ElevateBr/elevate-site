@@ -6,8 +6,8 @@
 set -e
 
 # Configurações
-PROJECT_ID=""
-BUCKET_NAME=""
+PROJECT_ID="elevatecowdev"
+BUCKET_NAME="elevate-site"
 REGION="us-central1"
 WEBSITE_MAIN_PAGE="index.html"
 WEBSITE_NOT_FOUND_PAGE="404.html"
