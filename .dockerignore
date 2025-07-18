@@ -17,7 +17,6 @@ deploy.sh
 # Docker files (to avoid copying them into the container)
 Dockerfile
 .dockerignore
-nginx.conf
 
 # OS files
 .DS_Store
