@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initNavigation();
     initSmoothScrolling();
     initScrollEffects();
-    initMobileMenu();
+
     initFormValidation();
     initAutoSave();
 });
@@ -78,64 +78,7 @@ function initScrollEffects() {
     animateElements.forEach(el => observer.observe(el));
 }
 
-// Mobile menu functionality
-function initMobileMenu() {
-    const navbarToggle = document.getElementById('navbar-toggle');
-    const navbarMenu = document.getElementById('navbar-menu');
-    
-    if (navbarToggle && navbarMenu) {
-        // Toggle menu
-        navbarToggle.addEventListener('click', (e) => {
-            e.stopPropagation();
-            navbarMenu.classList.toggle('active');
-            navbarToggle.classList.toggle('active');
-            
-            // Prevent body scroll when menu is open
-            if (navbarMenu.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
-            }
-        });
-        
-        // Close menu when clicking on a link
-        const navLinks = navbarMenu.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navbarMenu.classList.remove('active');
-                navbarToggle.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!navbarToggle.contains(e.target) && !navbarMenu.contains(e.target)) {
-                navbarMenu.classList.remove('active');
-                navbarToggle.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
-        
-        // Close menu on window resize (if screen becomes larger)
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 768) {
-                navbarMenu.classList.remove('active');
-                navbarToggle.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
-        
-        // Close menu on escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && navbarMenu.classList.contains('active')) {
-                navbarMenu.classList.remove('active');
-                navbarToggle.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
-    }
-}
+
 
 // Form validation
 function initFormValidation() {

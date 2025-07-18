@@ -22,6 +22,7 @@ class I18n {
                 'hero.card.growth': 'Crescimento',
                 'hero.card.technology': 'Tecnologia',
                 'hero.card.partnership': 'Parceria',
+                'hero.card.synergy': 'Sinergia',
 
 
 
@@ -133,6 +134,7 @@ class I18n {
                 'hero.card.growth': 'Growth',
                 'hero.card.technology': 'Technology',
                 'hero.card.partnership': 'Partnership',
+                'hero.card.synergy': 'Synergy',
 
 
 
