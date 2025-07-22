@@ -3,17 +3,20 @@
   "name": {
     "pt": "NotificationApi",
     "en": "NotificationApi",
-    "es": "NotificationApi"
+    "es": "NotificationApi",
+    "it": "NotificationApi"
   },
   "description": {
     "pt": "API de gestão de notificações para integrar em seu sistema. Solução robusta e escalável para gerenciar notificações em tempo real com alta performance e confiabilidade.",
     "en": "Notification management API to integrate into your system. Robust and scalable solution for managing real-time notifications with high performance and reliability.",
-    "es": "API de gestión de notificaciones para integrar en tu sistema. Solución robusta y escalable para gestionar notificaciones en tiempo real con alto rendimiento y confiabilidad."
+    "es": "API de gestión de notificaciones para integrar en tu sistema. Solución robusta y escalable para gestionar notificaciones en tiempo real con alto rendimiento y confiabilidad.",
+    "it": "API di gestione delle notifiche da integrare nel tuo sistema. Soluzione robusta e scalabile per gestire notifiche in tempo reale con alte prestazioni e affidabilità."
   },
   "shortDescription": {
     "pt": "API de notificações em tempo real",
     "en": "Real-time notification API",
-    "es": "API de notificaciones en tiempo real"
+    "es": "API de notificaciones en tiempo real",
+    "it": "API di notifiche in tempo reale"
   },
   "url": "#",
   "image": "images/products/notificationapi-logo.png",
@@ -38,6 +41,12 @@
       "Múltiples canales (email, SMS, push)",
       "API RESTful",
       "Dashboard de monitoreo"
+    ],
+    "it": [
+      "Notifiche in tempo reale",
+      "Canali multipli (email, SMS, push)",
+      "API RESTful",
+      "Dashboard di monitoraggio"
     ]
   }
 } 

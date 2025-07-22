@@ -5,12 +5,14 @@
   "name": {
     "pt": "Hyviral",
     "en": "Hyviral",
-    "es": "Hyviral"
+    "es": "Hyviral",
+    "it": "Hyviral"
   },
   "description": {
     "pt": "Plataforma de Marketing Digital",
     "en": "Digital Marketing Platform",
-    "es": "Plataforma de Marketing Digital"
+    "es": "Plataforma de Marketing Digital",
+    "it": "Piattaforma di Marketing Digitale"
   },
   "website": "https://www.hyviral.com/"
 } 
