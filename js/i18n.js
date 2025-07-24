@@ -338,6 +338,116 @@ class I18n {
                 // Floating Button
                 'floating.careers.title': '¡Posiciones Abiertas!',
                 'floating.careers.subtitle': 'Únete a nuestro equipo'
+            },
+            it: {
+                // Navigazione
+                'nav.home': 'Home',
+                'nav.products': 'Prodotti',
+                'nav.services': 'Servizi',
+                'nav.partners': 'Partner',
+                'nav.careers': 'Carriere',
+                'nav.contact': 'Contatto',
+
+                // Sezione Hero
+                'hero.title.part1': 'Progetti impegnativi richiedono',
+                'hero.title.part2': 'professionisti visionari',
+                'hero.subtitle': 'Software House specializzata in soluzioni aziendali innovative. Trasformiamo idee in realtà attraverso la tecnologia all’avanguardia.',
+                'hero.btn.services': 'I Nostri Servizi',
+                'hero.btn.contact': 'Contattaci',
+                'hero.card.innovation': 'Innovazione',
+                'hero.card.growth': 'Crescita',
+                'hero.card.technology': 'Tecnologia',
+                'hero.card.partnership': 'Partnership',
+                'hero.card.synergy': 'Sinergia',
+
+                // Prodotti
+                'products.title': 'I Nostri Prodotti',
+                'products.subtitle': 'Soluzioni innovative sviluppate dal nostro team di esperti',
+                'products.visit': 'Visita',
+                'products.coming_soon': 'Prossimamente',
+                'products.view_all': 'Vedi Tutti',
+
+                // Servizi
+                'services.title': 'I Nostri Servizi',
+                'services.subtitle': 'Servizi specializzati per far crescere la tua azienda',
+                'services.team.title': 'Team Augmentation',
+                'services.team.description': 'Rafforza il tuo team con professionisti specializzati in tecnologie moderne.',
+                'services.team.feature1': 'Sviluppatori specializzati',
+                'services.team.feature2': 'Flessibilità di assunzione',
+                'services.team.feature3': 'Riduzione dei costi',
+                'services.custom.title': 'Sviluppo Personalizzato',
+                'services.custom.description': 'Sviluppo di soluzioni personalizzate con tecnologie moderne e metodologie agili.',
+                'services.custom.feature1': 'Metodologie agili',
+                'services.custom.feature2': 'Tecnologie moderne',
+                'services.custom.feature3': 'Qualità garantita',
+                'services.digital.title': 'Trasformazione Digitale',
+                'services.digital.description': 'Trasformazione digitale completa per modernizzare i tuoi processi e sistemi.',
+                'services.digital.feature1': 'Modernizzazione dei sistemi',
+                'services.digital.feature2': 'Automazione dei processi',
+                'services.digital.feature3': 'Ottimizzazione delle prestazioni',
+
+                // Partner
+                'partners.title': 'Partner',
+                'partners.subtitle': 'Aziende che si affidano a Elevate per le loro soluzioni tecnologiche',
+                'partners.loading': 'Caricamento partner...',
+                'partners.startups': 'Startup',
+                'partners.startups.desc': 'Aziende innovative in crescita',
+                'partners.corporations': 'Corporazioni',
+                'partners.corporations.desc': 'Grandi aziende in trasformazione digitale',
+                'partners.ecommerce': 'E-commerce',
+                'partners.ecommerce.desc': 'Piattaforme di vendita online',
+                'partners.fintech': 'Fintech',
+                'partners.fintech.desc': 'Aziende di tecnologia finanziaria',
+
+                // Partners Hero
+                'partners.hero.title.part1': 'Partnership',
+                'partners.hero.title.part2': 'che elevano',
+                'partners.hero.subtitle': 'Insieme costruiamo il futuro della tecnologia. Le nostre partnership strategiche ci permettono di offrire soluzioni ancora più innovative e complete ai nostri clienti.',
+                'partners.hero.btn.partners': 'Scopri i Nostri Partner',
+                'partners.hero.btn.contact': 'Diventa Nostro Partner',
+                'partners.hero.card.collaboration': 'Collaborazione',
+                'partners.hero.card.innovation': 'Innovazione',
+                'partners.hero.card.global': 'Globale',
+
+                // Carriere
+                'careers.title': 'Unisciti ai Nostri Team di Soluzione',
+                'careers.subtitle': 'Se vuoi far parte di un team di professionisti eccellenti per sviluppare progetti visionari e portare la tua carriera a un livello superiore, questa è la tua occasione!',
+                'careers.loading': 'Caricamento opportunità...',
+
+                // Offerte di lavoro
+                'vagas.requirements': 'Requisiti',
+                'vagas.benefits': 'Benefici',
+                'vagas.apply': 'Candidati Ora',
+                'vagas.apply_success': 'Candidatura inviata con successo!',
+
+                // Contatto
+                'contact.title': 'Contatto',
+                'contact.subtitle': 'Contattaci per discutere il tuo progetto',
+                'contact.address.title': 'Indirizzo',
+                'contact.whatsapp.title': 'WhatsApp',
+                'contact.email.title': 'Email',
+                'contact.hours.title': 'Orari di Apertura',
+                'contact.hours.text': 'Dal lunedì al venerdì: 9:00 - 18:00',
+
+                // Modulo
+                'form.name': 'Nome',
+                'form.email': 'Email',
+                'form.phone': 'Telefono',
+                'form.company': 'Azienda',
+                'form.message': 'Messaggio',
+                'form.submit': 'Invia Messaggio',
+                'form.email_opened': 'Applicazione email aperta! Completa l’invio nel tuo client di posta.',
+                'form.email_error': 'Impossibile aprire il client di posta. Riprova.',
+
+                // Footer
+                'footer.description': 'Progetti impegnativi richiedono professionisti visionari.',
+                'footer.quick_links': 'Link Rapidi',
+                'footer.services': 'Servizi',
+                'footer.contact': 'Contatto',
+
+                // Floating Button
+                'floating.careers.title': 'Posizioni Aperte!',
+                'floating.careers.subtitle': 'Unisciti al nostro team'
             }
         };
 

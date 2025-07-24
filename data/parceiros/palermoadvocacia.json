@@ -1,0 +1,18 @@
+{
+  "id": "palermoadvocacia",
+  "icon": "fas fa-balance-scale",
+  "image": "images/parceiros/logo-palermoadvocacia.png",
+  "name": {
+    "pt": "Palermo Advocacia",
+    "en": "Palermo Law Firm",
+    "es": "Palermo Abogacía",
+    "it": "Palermo Studio Legale"
+  },
+  "description": {
+    "pt": "Assessoria jurídica especializada para empresas e pessoas físicas.",
+    "en": "Specialized legal advice for companies and individuals.",
+    "es": "Asesoría jurídica especializada para empresas y particulares.",
+    "it": "Consulenza legale specializzata per aziende e privati."
+  },
+  "website": "http://www.palermoadvocacia.adv.br"
+} 
