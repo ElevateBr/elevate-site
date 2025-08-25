@@ -1,0 +1,59 @@
+{
+  "id": "salesforce-developer",
+  "title": {
+    "pt": "Desenvolvedor Salesforce",
+    "en": "Salesforce Developer",
+    "es": "Desarrollador Salesforce"
+  },
+  "type": "Full-time",
+  "location": "Híbrido",
+  "description": {
+    "pt": "Procuramos um Desenvolvedor Salesforce para desenvolver soluções personalizadas e implementar funcionalidades avançadas na plataforma Salesforce. Você trabalhará com tecnologias modernas e metodologias ágeis.",
+    "en": "We are looking for a Salesforce Developer to develop custom solutions and implement advanced features on the Salesforce platform. You will work with modern technologies and agile methodologies.",
+    "es": "Buscamos un Desarrollador Salesforce para desarrollar soluciones personalizadas e implementar funcionalidades avanzadas en la plataforma Salesforce. Trabajarás con tecnologías modernas y metodologías ágiles."
+  },
+  "requirements": {
+    "pt": [
+      "Mínimo de 3 anos de experiência com desenvolvimento Salesforce",
+      "Conhecimento sólido em Apex, Visualforce e Lightning Web Components",
+      "Experiência com SOQL, SOSL e DML",
+      "Conhecimento em integrações com APIs externas",
+      "Experiência com testes automatizados e deployment",
+      "Conhecimento em processos de negócio e workflows",
+      "Experiência com metodologias ágeis"
+    ],
+    "en": [
+      "Minimum 3 years of Salesforce development experience",
+      "Solid knowledge in Apex, Visualforce and Lightning Web Components",
+      "Experience with SOQL, SOSL and DML",
+      "Knowledge in external API integrations",
+      "Experience with automated testing and deployment",
+      "Knowledge in business processes and workflows",
+      "Experience with agile methodologies"
+    ],
+    "es": [
+      "Mínimo 3 años de experiencia en desarrollo Salesforce",
+      "Conocimiento sólido en Apex, Visualforce y Lightning Web Components",
+      "Experiencia con SOQL, SOSL y DML",
+      "Conocimiento en integraciones con APIs externas",
+      "Experiencia con pruebas automatizadas y deployment",
+      "Conocimiento en procesos de negocio y workflows",
+      "Experiencia con metodologías ágiles"
+    ]
+  },
+  "benefits": {
+    "pt": [
+      "Trabalho híbrido",
+      "Horário flexível"
+    ],
+    "en": [
+      "Hybrid work",
+      "Flexible hours"
+    ],
+    "es": [
+      "Trabajo híbrido",
+      "Horario flexible"
+    ]
+  },
+  "date": "2024-01-15"
+}
