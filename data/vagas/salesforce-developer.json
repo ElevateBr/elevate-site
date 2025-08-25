@@ -14,7 +14,6 @@
   },
   "requirements": {
     "pt": [
-      "Certificação Salesforce Platform Developer I ou superior",
       "Mínimo de 3 anos de experiência com desenvolvimento Salesforce",
       "Conhecimento sólido em Apex, Visualforce e Lightning Web Components",
       "Experiência com SOQL, SOSL e DML",
@@ -24,7 +23,6 @@
       "Experiência com metodologias ágeis"
     ],
     "en": [
-      "Salesforce Platform Developer I certification or higher",
       "Minimum 3 years of Salesforce development experience",
       "Solid knowledge in Apex, Visualforce and Lightning Web Components",
       "Experience with SOQL, SOSL and DML",
@@ -34,7 +32,6 @@
       "Experience with agile methodologies"
     ],
     "es": [
-      "Certificación Salesforce Platform Developer I o superior",
       "Mínimo 3 años de experiencia en desarrollo Salesforce",
       "Conocimiento sólido en Apex, Visualforce y Lightning Web Components",
       "Experiencia con SOQL, SOSL y DML",
@@ -47,33 +44,15 @@
   "benefits": {
     "pt": [
       "Trabalho híbrido",
-      "Horário flexível",
-      "Plano de saúde",
-      "Vale refeição",
-      "Plano de carreira",
-      "Certificações Salesforce pagas pela empresa",
-      "Participação em eventos e conferências Salesforce",
-      "Mentoria com arquitetos Salesforce experientes"
+      "Horário flexível"
     ],
     "en": [
       "Hybrid work",
-      "Flexible hours",
-      "Health plan",
-      "Meal allowance",
-      "Career plan",
-      "Salesforce certifications paid by the company",
-      "Participation in Salesforce events and conferences",
-      "Mentorship with experienced Salesforce architects"
+      "Flexible hours"
     ],
     "es": [
       "Trabajo híbrido",
-      "Horario flexible",
-      "Plan de salud",
-      "Vale de comida",
-      "Plan de carrera",
-      "Certificaciones Salesforce pagadas por la empresa",
-      "Participación en eventos y conferencias Salesforce",
-      "Mentoría con arquitectos Salesforce experimentados"
+      "Horario flexible"
     ]
   },
   "date": "2024-01-15"

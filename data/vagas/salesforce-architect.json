@@ -14,7 +14,6 @@
   },
   "requirements": {
     "pt": [
-      "Certificação Salesforce Certified Technical Architect (CTA) ou Salesforce Certified Application Architect",
       "Mínimo de 5 anos de experiência com Salesforce",
       "Experiência em arquitetura de soluções empresariais",
       "Conhecimento profundo em Apex, Visualforce, Lightning Web Components",
@@ -23,7 +22,6 @@
       "Experiência com metodologias ágeis"
     ],
     "en": [
-      "Salesforce Certified Technical Architect (CTA) or Salesforce Certified Application Architect certification",
       "Minimum 5 years of Salesforce experience",
       "Experience in enterprise solution architecture",
       "Deep knowledge in Apex, Visualforce, Lightning Web Components",
@@ -32,7 +30,6 @@
       "Experience with agile methodologies"
     ],
     "es": [
-      "Certificación Salesforce Certified Technical Architect (CTA) o Salesforce Certified Application Architect",
       "Mínimo 5 años de experiencia con Salesforce",
       "Experiencia en arquitectura de soluciones empresariales",
       "Conocimiento profundo en Apex, Visualforce, Lightning Web Components",
@@ -44,30 +41,15 @@
   "benefits": {
     "pt": [
       "Trabalho híbrido",
-      "Horário flexível",
-      "Plano de saúde",
-      "Vale refeição",
-      "Plano de carreira",
-      "Certificações Salesforce pagas pela empresa",
-      "Participação em eventos e conferências Salesforce"
+      "Horário flexível"
     ],
     "en": [
       "Hybrid work",
-      "Flexible hours",
-      "Health plan",
-      "Meal allowance",
-      "Career plan",
-      "Salesforce certifications paid by the company",
-      "Participation in Salesforce events and conferences"
+      "Flexible hours"
     ],
     "es": [
       "Trabajo híbrido",
-      "Horario flexible",
-      "Plan de salud",
-      "Vale de comida",
-      "Plan de carrera",
-      "Certificaciones Salesforce pagadas por la empresa",
-      "Participación en eventos y conferencias Salesforce"
+      "Horario flexible"
     ]
   },
   "date": "2024-01-15"
