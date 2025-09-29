@@ -37,5 +37,37 @@
       "Aumento de eficiencia",
       "Enfoque estratégico"
     ]
+  },
+  "specializations": {
+    "pt": {
+      "cloud": {
+        "title": "Plataformas de Nuvem",
+        "technologies": [
+          "SAP BTP (Business Technology Platform)",
+          "AWS (Amazon Web Services)",
+          "GCP (Google Cloud Platform)"
+        ]
+      }
+    },
+    "en": {
+      "cloud": {
+        "title": "Cloud Platforms",
+        "technologies": [
+          "SAP BTP (Business Technology Platform)",
+          "AWS (Amazon Web Services)",
+          "GCP (Google Cloud Platform)"
+        ]
+      }
+    },
+    "es": {
+      "cloud": {
+        "title": "Plataformas en la Nube",
+        "technologies": [
+          "SAP BTP (Business Technology Platform)",
+          "AWS (Amazon Web Services)",
+          "GCP (Google Cloud Platform)"
+        ]
+      }
+    }
   }
 } 

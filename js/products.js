@@ -91,15 +91,15 @@ class ProductsManager {
                             `).join('')}
                         </div>
                         <div class="banner-actions">
-                            ${product.url !== '#' ? `
+                            ${product.url && product.url === '#' ? `
+                                <span class="btn btn-outline disabled">
+                                    ${this.getText('products.coming_soon')}
+                                </span>
+                            ` : `
                                 <a href="${product.url}" target="_blank" class="btn btn-primary">
                                     <i class="fas fa-external-link-alt"></i>
                                     ${this.getText('products.visit')}
                                 </a>
-                            ` : `
-                                <span class="btn btn-outline disabled">
-                                    ${this.getText('products.coming_soon')}
-                                </span>
                             `}
                         </div>
                     </div>
@@ -226,4 +226,4 @@ class ProductsManager {
     }
 }
 
-// ProductsManager will be initialized by SiteInitializer 
+// ProductsManager will be initialized by SiteInitializer

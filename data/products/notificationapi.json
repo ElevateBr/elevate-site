@@ -7,10 +7,10 @@
     "it": "NotificationApi"
   },
   "description": {
-    "pt": "API de gestão de notificações para integrar em seu sistema. Solução robusta e escalável para gerenciar notificações em tempo real com alta performance e confiabilidade.",
-    "en": "Notification management API to integrate into your system. Robust and scalable solution for managing real-time notifications with high performance and reliability.",
-    "es": "API de gestión de notificaciones para integrar en tu sistema. Solución robusta y escalable para gestionar notificaciones en tiempo real con alto rendimiento y confiabilidad.",
-    "it": "API di gestione delle notifiche da integrare nel tuo sistema. Soluzione robusta e scalabile per gestire notifiche in tempo reale con alte prestazioni e affidabilità."
+    "pt": "Nossa NotificationAPI está disponível para parceiros de nossa incubadora digital, utilizada para notificações centralizadas multicanais como E-mail, WhatsApp, SMS, Push e outros. Solução robusta e escalável para gerenciar notificações em tempo real com alta performance e confiabilidade.",
+    "en": "Our NotificationAPI is available for partners of our digital incubator, used for centralized multi-channel notifications such as Email, WhatsApp, SMS, Push and others. Robust and scalable solution for managing real-time notifications with high performance and reliability.",
+    "es": "Nuestra NotificationAPI está disponible para socios de nuestra incubadora digital, utilizada para notificaciones centralizadas multicanal como E-mail, WhatsApp, SMS, Push y otros. Solución robusta y escalable para gestionar notificaciones en tiempo real con alto rendimiento y confiabilidad.",
+    "it": "La nostra NotificationAPI è disponibile per i partner del nostro incubatore digitale, utilizzata per notifiche centralizzate multi-canale come E-mail, WhatsApp, SMS, Push e altri. Soluzione robusta e scalabile per gestire notifiche in tempo reale con alte prestazioni e affidabilità."
   },
   "shortDescription": {
     "pt": "API de notificações em tempo real",
@@ -18,34 +18,38 @@
     "es": "API de notificaciones en tiempo real",
     "it": "API di notifiche in tempo reale"
   },
-  "url": "#",
+  "url": "https://notification.elevatebr.org",
   "image": "images/products/notificationapi-logo.png",
   "icon": "fas fa-bell",
   "category": "api",
   "status": "active",
   "features": {
     "pt": [
-      "Notificações em tempo real",
-      "Múltiplos canais (email, SMS, push)",
-      "API RESTful",
+      "Notificações centralizadas multicanais",
+      "E-mail, WhatsApp, SMS, Push e outros",
+      "Disponível para parceiros da incubadora",
+      "API RESTful robusta",
       "Dashboard de monitoramento"
     ],
     "en": [
-      "Real-time notifications",
-      "Multiple channels (email, SMS, push)",
-      "RESTful API",
+      "Centralized multi-channel notifications",
+      "Email, WhatsApp, SMS, Push and others",
+      "Available for incubator partners",
+      "Robust RESTful API",
       "Monitoring dashboard"
     ],
     "es": [
-      "Notificaciones en tiempo real",
-      "Múltiples canales (email, SMS, push)",
-      "API RESTful",
+      "Notificaciones centralizadas multicanal",
+      "E-mail, WhatsApp, SMS, Push y otros",
+      "Disponible para socios de la incubadora",
+      "API RESTful robusta",
       "Dashboard de monitoreo"
     ],
     "it": [
-      "Notifiche in tempo reale",
-      "Canali multipli (email, SMS, push)",
-      "API RESTful",
+      "Notifiche centralizzate multi-canale",
+      "E-mail, WhatsApp, SMS, Push e altri",
+      "Disponibile per i partner dell'incubatore",
+      "API RESTful robusta",
       "Dashboard di monitoraggio"
     ]
   }
