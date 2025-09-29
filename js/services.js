@@ -115,6 +115,20 @@ class ServicesManager {
                         <span class="feature-tag">${feature}</span>
                     `).join('')}
                 </div>
+                ${service.specializations && service.specializations[lang] ? `
+                    <div class="servico-specializations">
+                        ${Object.keys(service.specializations[lang]).map(category => `
+                            <div class="specialization-category">
+                                <h4 class="specialization-title">${service.specializations[lang][category].title}</h4>
+                                <div class="specialization-technologies">
+                                    ${service.specializations[lang][category].technologies.map(tech => `
+                                        <span class="tech-tag">${tech}</span>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                ` : ''}
             </div>
         `;
     }

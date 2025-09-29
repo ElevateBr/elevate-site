@@ -108,6 +108,75 @@ body {
     line-height: 1.6;
 }
 
+.hero-specializations {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.specializations-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a237e;
+    margin-bottom: 1rem;
+    text-align: center;
+    background: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-shadow: none;
+}
+
+.specializations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.specialization-category {
+    text-align: center;
+}
+
+.category-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a237e;
+    margin-bottom: 0.8rem;
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.tech-tag {
+    background: linear-gradient(135deg, #1a237e, #3f51b5);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(26, 35, 126, 0.2);
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(26, 35, 126, 0.3);
+}
+
 .hero-buttons {
     display: flex;
     gap: 1rem;
@@ -640,6 +709,52 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+.servico-specializations {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.specialization-category {
+    margin-bottom: 1rem;
+}
+
+.specialization-category:last-child {
+    margin-bottom: 0;
+}
+
+.specialization-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a237e;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.specialization-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tech-tag {
+    background: linear-gradient(135deg, #1a237e, #3f51b5);
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(26, 35, 126, 0.2);
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(26, 35, 126, 0.3);
 }
 
 /* Partners Section */
@@ -1338,7 +1453,8 @@ body {
         max-height: 2.8em;
     }
     
-    .servico-card.compact .servico-features {
+    .servico-card.compact .servico-features,
+    .servico-card.compact .servico-specializations {
         display: none;
     }
     
@@ -1350,7 +1466,8 @@ body {
     }
     
     .servico-card.expanded .servico-description,
-    .servico-card.expanded .servico-features {
+    .servico-card.expanded .servico-features,
+    .servico-card.expanded .servico-specializations {
         display: block;
         animation: fadeIn 0.3s ease;
     }
@@ -1422,6 +1539,32 @@ body {
         font-size: 0.7rem;
     }
     
+    /* Specializations mobile */
+    .hero-specializations {
+        margin: 1.5rem 0;
+        padding: 1rem;
+    }
+    
+    .specializations-title {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+    
+    .specializations-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .category-title {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+
     /* Buttons mobile */
     .hero-buttons {
         justify-content: center;
@@ -1700,6 +1843,15 @@ body {
     
     .servico-card.expanded {
         padding: 0.6rem;
+    }
+    
+    .specialization-title {
+        font-size: 0.8rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.5rem;
     }
     
     .servico-icon {

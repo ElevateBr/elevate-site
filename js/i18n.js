@@ -23,8 +23,17 @@ class I18n {
                 'hero.card.technology': 'Tecnologia',
                 'hero.card.partnership': 'Parceria',
                 'hero.card.synergy': 'Sinergia',
-
-
+                'hero.specializations.title': 'Especializações',
+                'hero.specializations.sap': 'SAP',
+                'hero.specializations.open': 'Open Source',
+                'hero.specializations.sap.btp': 'SAP BTP',
+                'hero.specializations.sap.ui5': 'SAP UI5/Fiori',
+                'hero.specializations.sap.cap': 'SAP CAP',
+                'hero.specializations.sap.integration': 'SAP Integration Suite',
+                'hero.specializations.open.react': 'React Web',
+                'hero.specializations.open.react.mobile': 'React Mobile',
+                'hero.specializations.open.nodejs': 'Node.js',
+                'hero.specializations.open.java': 'Java',
 
                 // Produtos
                 'products.title': 'Nossos Produtos',
@@ -135,8 +144,17 @@ class I18n {
                 'hero.card.technology': 'Technology',
                 'hero.card.partnership': 'Partnership',
                 'hero.card.synergy': 'Synergy',
-
-
+                'hero.specializations.title': 'Specializations',
+                'hero.specializations.sap': 'SAP',
+                'hero.specializations.open': 'Open Source',
+                'hero.specializations.sap.btp': 'SAP BTP',
+                'hero.specializations.sap.ui5': 'SAP UI5/Fiori',
+                'hero.specializations.sap.cap': 'SAP CAP',
+                'hero.specializations.sap.integration': 'SAP Integration Suite',
+                'hero.specializations.open.react': 'React Web',
+                'hero.specializations.open.react.mobile': 'React Mobile',
+                'hero.specializations.open.nodejs': 'Node.js',
+                'hero.specializations.open.java': 'Java',
 
                 // Products
                 'products.title': 'Our Products',
@@ -246,7 +264,18 @@ class I18n {
                 'hero.card.growth': 'Crecimiento',
                 'hero.card.technology': 'Tecnología',
                 'hero.card.partnership': 'Alianza',
-
+                'hero.card.synergy': 'Sinergia',
+                'hero.specializations.title': 'Especializaciones',
+                'hero.specializations.sap': 'SAP',
+                'hero.specializations.open': 'Open Source',
+                'hero.specializations.sap.btp': 'SAP BTP',
+                'hero.specializations.sap.ui5': 'SAP UI5/Fiori',
+                'hero.specializations.sap.cap': 'SAP CAP',
+                'hero.specializations.sap.integration': 'SAP Integration Suite',
+                'hero.specializations.open.react': 'React Web',
+                'hero.specializations.open.react.mobile': 'React Mobile',
+                'hero.specializations.open.nodejs': 'Node.js',
+                'hero.specializations.open.java': 'Java',
 
                 'topics.loading': 'Cargando novedades...',
 
@@ -359,6 +388,17 @@ class I18n {
                 'hero.card.technology': 'Tecnologia',
                 'hero.card.partnership': 'Partnership',
                 'hero.card.synergy': 'Sinergia',
+                'hero.specializations.title': 'Specializzazioni',
+                'hero.specializations.sap': 'SAP',
+                'hero.specializations.open': 'Open Source',
+                'hero.specializations.sap.btp': 'SAP BTP',
+                'hero.specializations.sap.ui5': 'SAP UI5/Fiori',
+                'hero.specializations.sap.cap': 'SAP CAP',
+                'hero.specializations.sap.integration': 'SAP Integration Suite',
+                'hero.specializations.open.react': 'React Web',
+                'hero.specializations.open.react.mobile': 'React Mobile',
+                'hero.specializations.open.nodejs': 'Node.js',
+                'hero.specializations.open.java': 'Java',
 
                 // Prodotti
                 'products.title': 'I Nostri Prodotti',

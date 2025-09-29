@@ -1,0 +1,56 @@
+{
+  "id": "oauth-auth",
+  "name": {
+    "pt": "OAuth 2.0 Authentication",
+    "en": "OAuth 2.0 Authentication",
+    "es": "Autenticación OAuth 2.0",
+    "it": "Autenticazione OAuth 2.0"
+  },
+  "description": {
+    "pt": "Serviço de autenticação OAuth 2.0 para suportar nossos parceiros da incubadora digital. Solução segura e robusta para gerenciar autenticação e autorização em aplicações, garantindo segurança e facilidade de integração.",
+    "en": "OAuth 2.0 authentication service to support our digital incubator partners. Secure and robust solution for managing authentication and authorization in applications, ensuring security and ease of integration.",
+    "es": "Servicio de autenticación OAuth 2.0 para apoyar a nuestros socios de la incubadora digital. Solución segura y robusta para gestionar autenticación y autorización en aplicaciones, garantizando seguridad y facilidad de integración.",
+    "it": "Servizio di autenticazione OAuth 2.0 per supportare i nostri partner dell'incubatore digitale. Soluzione sicura e robusta per gestire autenticazione e autorizzazione nelle applicazioni, garantendo sicurezza e facilità di integrazione."
+  },
+  "shortDescription": {
+    "pt": "Serviço de autenticação OAuth 2.0",
+    "en": "OAuth 2.0 authentication service",
+    "es": "Servicio de autenticación OAuth 2.0",
+    "it": "Servizio di autenticazione OAuth 2.0"
+  },
+  "url": "https://useradmin.elevatebr.org",
+  "image": "images/products/placeholder.svg",
+  "icon": "fas fa-shield-alt",
+  "category": "security",
+  "status": "active",
+  "features": {
+    "pt": [
+      "Autenticação OAuth 2.0 segura",
+      "Suporte para parceiros da incubadora",
+      "Integração simples e rápida",
+      "Gerenciamento de tokens",
+      "Múltiplos provedores de identidade"
+    ],
+    "en": [
+      "Secure OAuth 2.0 authentication",
+      "Support for incubator partners",
+      "Simple and fast integration",
+      "Token management",
+      "Multiple identity providers"
+    ],
+    "es": [
+      "Autenticación OAuth 2.0 segura",
+      "Soporte para socios de la incubadora",
+      "Integración simple y rápida",
+      "Gestión de tokens",
+      "Múltiples proveedores de identidad"
+    ],
+    "it": [
+      "Autenticazione OAuth 2.0 sicura",
+      "Supporto per i partner dell'incubatore",
+      "Integrazione semplice e veloce",
+      "Gestione dei token",
+      "Multipli provider di identità"
+    ]
+  }
+}

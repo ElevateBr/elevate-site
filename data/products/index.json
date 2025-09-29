@@ -2,6 +2,7 @@
   "products": [
     "tapinout",
     "seathub",
-    "notificationapi"
+    "notificationapi",
+    "oauth-auth"
   ]
 } 

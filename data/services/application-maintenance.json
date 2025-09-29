@@ -37,5 +37,67 @@
       "Solución de problemas",
       "Minimización del tiempo de inactividad"
     ]
+  },
+  "specializations": {
+    "pt": {
+      "sap": {
+        "title": "Especializações SAP",
+        "technologies": [
+          "SAP BTP (Business Technology Platform)",
+          "SAP UI5/Fiori",
+          "SAP CAP (Cloud Application Programming)",
+          "SAP Integration Suite"
+        ]
+      },
+      "open": {
+        "title": "Tecnologias Open Source",
+        "technologies": [
+          "React Web",
+          "React Mobile",
+          "Node.js",
+          "Java"
+        ]
+      }
+    },
+    "en": {
+      "sap": {
+        "title": "SAP Specializations",
+        "technologies": [
+          "SAP BTP (Business Technology Platform)",
+          "SAP UI5/Fiori",
+          "SAP CAP (Cloud Application Programming)",
+          "SAP Integration Suite"
+        ]
+      },
+      "open": {
+        "title": "Open Source Technologies",
+        "technologies": [
+          "React Web",
+          "React Mobile",
+          "Node.js",
+          "Java"
+        ]
+      }
+    },
+    "es": {
+      "sap": {
+        "title": "Especializaciones SAP",
+        "technologies": [
+          "SAP BTP (Business Technology Platform)",
+          "SAP UI5/Fiori",
+          "SAP CAP (Cloud Application Programming)",
+          "SAP Integration Suite"
+        ]
+      },
+      "open": {
+        "title": "Tecnologías Open Source",
+        "technologies": [
+          "React Web",
+          "React Mobile",
+          "Node.js",
+          "Java"
+        ]
+      }
+    }
   }
 } 
