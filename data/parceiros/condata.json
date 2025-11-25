@@ -1,0 +1,18 @@
+{
+  "id": "Condata Web",
+  "icon": "fas fa-leaf",
+  "image": "images/parceiros/logo-condataweb.jfif",
+  "name": {
+    "pt": "Condata Web",
+    "en": "Condata Web",
+    "es": "Condata Web",
+    "it": "Condata Web"
+  },
+  "description": {
+    "pt": "Contabilidade Online",
+    "en": "Online Accounting",
+    "es": "Contabilidad Online",
+    "it": "Contabilità Online"
+  },
+  "website": "https://lp.condataweb.com/"
+} 
