@@ -1,0 +1,18 @@
+{
+  "id": "Goa Technologies",
+  "icon": "fas fa-leaf",
+  "image": "images/parceiros/logo-goa.png",
+  "name": {
+    "pt": "Goa Technologies",
+    "en": "Goa Technologies",
+    "es": "Goa Technologies",
+    "it": "Goa Technologies"
+  },
+  "description": {
+    "pt": "Goa Technologies",
+    "en": "Goa Technologies",
+    "es": "Goa Technologies",
+    "it": "Goa Technologies"
+  },
+  "website": "https://goatechnologies.com/"
+} 
