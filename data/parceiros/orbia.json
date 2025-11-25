@@ -1,0 +1,18 @@
+{
+  "id": "Orbia",
+  "icon": "fas fa-globe",
+  "image": "images/parceiros/logo-orbia.png",
+  "name": {
+    "pt": "Orbia",
+    "en": "Orbia",
+    "es": "Orbia",
+    "it": "Orbia"
+  },
+  "description": {
+    "pt": "Marketplace de soluções e insumos agrícolas focado em produtividade e sustentabilidade.",
+    "en": "Marketplace for agricultural solutions and inputs focused on productivity and sustainability.",
+    "es": "Marketplace de soluciones e insumos agrícolas enfocado en productividad y sostenibilidad.",
+    "it": "Marketplace di soluzioni e input agricoli focalizzato su produttività e sostenibilità."
+  },
+  "website": "https://www.orbia.com/"
+}

@@ -1,7 +1,10 @@
 {
   "partners": [
+    "goa",
+    "orbia",
+    "condata",
+    "palermoadvocacia",
     "hyviral",
-    "avisrara",
-    "palermoadvocacia"
+    "avisrara"
   ]
 } 
