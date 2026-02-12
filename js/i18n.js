@@ -1,7 +1,13 @@
 // Sistema de Internacionalização (i18n)
 class I18n {
     constructor() {
-        this.currentLang = 'pt';
+        this.languagePages = window.LANGUAGE_PAGE_MAP || {
+            pt: 'index.html',
+            en: 'index-en.html',
+            es: 'index-es.html',
+            it: 'index-it.html'
+        };
+        this.currentLang = this.resolveInitialLanguage();
         this.translations = {
             pt: {
                 // Navegação
@@ -494,9 +500,22 @@ class I18n {
         this.init();
     }
 
+    resolveInitialLanguage() {
+        const fromWindow = window.DEFAULT_LANGUAGE;
+        if (fromWindow && ['pt', 'en', 'es', 'it'].includes(fromWindow)) {
+            return fromWindow;
+        }
+
+        const htmlLang = (document.documentElement.getAttribute('lang') || '').toLowerCase();
+        if (htmlLang.startsWith('en')) return 'en';
+        if (htmlLang.startsWith('es')) return 'es';
+        if (htmlLang.startsWith('it')) return 'it';
+        return 'pt';
+    }
+
     init() {
         this.setupLanguageSelector();
-        this.updateContent();
+        this.setLanguage(this.currentLang, { skipNavigation: true });
     }
 
     setupLanguageSelector() {
@@ -504,22 +523,58 @@ class I18n {
         langButtons.forEach(btn => {
             btn.addEventListener('click', () => {
                 const lang = btn.getAttribute('data-lang');
+                const currentHash = window.location.hash || '';
+                const targetPage = this.languagePages[lang];
+
+                if (targetPage) {
+                    const targetUrl = `${targetPage}${currentHash}`;
+                    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+                    const currentUrl = `${currentPath}${currentHash}`;
+
+                    if (targetUrl !== currentUrl) {
+                        window.location.href = targetUrl;
+                        return;
+                    }
+                }
+
                 this.setLanguage(lang);
             });
         });
     }
 
-    setLanguage(lang) {
+    setLanguage(lang, options = {}) {
+        const { skipNavigation = false } = options;
         this.currentLang = lang;
-        
+
         // Update active button
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.classList.remove('active');
         });
-        document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
-        
+        const activeButton = document.querySelector(`[data-lang="${lang}"]`);
+        if (activeButton) {
+            activeButton.classList.add('active');
+        }
+
+        if (!skipNavigation) {
+            const targetPage = this.languagePages[lang];
+            if (targetPage) {
+                const currentHash = window.location.hash || '';
+                const targetUrl = `${targetPage}${currentHash}`;
+                const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+                const currentUrl = `${currentPath}${currentHash}`;
+                if (targetUrl !== currentUrl) {
+                    window.location.href = targetUrl;
+                    return;
+                }
+            }
+        }
+
+        // Keep html lang aligned with active language for SEO/accessibility
+        const langMap = { pt: 'pt-BR', en: 'en', es: 'es', it: 'it' };
+        document.documentElement.setAttribute('lang', langMap[lang] || 'pt-BR');
+
         this.updateContent();
-        
+
         // Update products manager language
         if (window.productsManager) {
             window.productsManager.updateLanguage(lang);

@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all components
     initNavigation();
+    initLocalizedMobileHeaderOffset();
     initSmoothScrolling();
     initScrollEffects();
 
@@ -9,10 +10,123 @@ document.addEventListener('DOMContentLoaded', function() {
     initAutoSave();
 });
 
+function initLocalizedMobileHeaderOffset() {
+    const header = document.querySelector('.header');
+    const main = document.querySelector('main');
+    if (!header || !main) return;
+
+    const applyOffset = () => {
+        if (window.innerWidth <= 768) {
+            main.style.paddingTop = `${header.offsetHeight + 8}px`;
+        } else {
+            main.style.paddingTop = '';
+        }
+    };
+
+    applyOffset();
+    window.addEventListener('load', applyOffset);
+    window.addEventListener('resize', applyOffset);
+
+    // Recalculate when mobile panels open/close
+    document.addEventListener('click', (event) => {
+        if (event.target.closest('.navbar-toggle') || event.target.closest('.lang-toggle')) {
+            requestAnimationFrame(applyOffset);
+        }
+    });
+
+    // Recalculate whenever header size changes (language labels, wrapping, etc.)
+    if (typeof ResizeObserver !== 'undefined') {
+        const headerObserver = new ResizeObserver(() => applyOffset());
+        headerObserver.observe(header);
+    }
+}
+
 // Navigation functionality
 function initNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('section[id]');
+    const navbar = document.querySelector('.navbar');
+    const navMenu = document.querySelector('.navbar-nav');
+    const navToggle = document.querySelector('.navbar-toggle');
+    const langToggle = document.querySelector('.lang-toggle');
+
+    if (navToggle && navbar && navMenu) {
+        navToggle.addEventListener('click', () => {
+            const isOpen = navbar.classList.toggle('mobile-open');
+            navToggle.setAttribute('aria-expanded', String(isOpen));
+
+            // Keep one panel open at a time on mobile
+            if (isOpen) {
+                navbar.classList.remove('lang-open');
+                if (langToggle) {
+                    langToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
+        if (langToggle) {
+            langToggle.addEventListener('click', () => {
+                const isLangOpen = navbar.classList.toggle('lang-open');
+                langToggle.setAttribute('aria-expanded', String(isLangOpen));
+
+                // Keep one panel open at a time on mobile
+                if (isLangOpen) {
+                    navbar.classList.remove('mobile-open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    navbar.classList.remove('mobile-open');
+                    navbar.classList.remove('lang-open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    if (langToggle) {
+                        langToggle.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            });
+        });
+
+        document.addEventListener('click', (event) => {
+            if (
+                window.innerWidth <= 768 &&
+                navbar.classList.contains('mobile-open') &&
+                !navbar.contains(event.target)
+            ) {
+                navbar.classList.remove('mobile-open');
+                navbar.classList.remove('lang-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+                if (langToggle) {
+                    langToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && (navbar.classList.contains('mobile-open') || navbar.classList.contains('lang-open'))) {
+                navbar.classList.remove('mobile-open');
+                navbar.classList.remove('lang-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+                if (langToggle) {
+                    langToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 && (navbar.classList.contains('mobile-open') || navbar.classList.contains('lang-open'))) {
+                navbar.classList.remove('mobile-open');
+                navbar.classList.remove('lang-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+                if (langToggle) {
+                    langToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+    }
     
     // Update active nav link on scroll
     window.addEventListener('scroll', () => {

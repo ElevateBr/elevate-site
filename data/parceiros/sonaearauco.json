@@ -1,0 +1,18 @@
+{
+  "id": "SonaeArauco",
+  "icon": "fas fa-tree",
+  "image": "images/parceiros/logo-sonaearauco.png",
+  "name": {
+    "pt": "Sonae Arauco",
+    "en": "Sonae Arauco",
+    "es": "Sonae Arauco",
+    "it": "Sonae Arauco"
+  },
+  "description": {
+    "pt": "Líder global em soluções à base de madeira, painéis decorativos e produtos para construção e design de interiores",
+    "en": "Global leader in wood-based solutions, decorative panels and products for construction and interior design",
+    "es": "Líder mundial en soluciones a base de madera, paneles decorativos y productos para construcción y diseño de interiores",
+    "it": "Leader globale in soluzioni a base di legno, pannelli decorativi e prodotti per edilizia e design d'interni"
+  },
+  "website": "https://www.sonaearauco.com/pt"
+}

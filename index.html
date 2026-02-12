@@ -29,6 +29,11 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://elevatebr.org/">
+    <link rel="alternate" hreflang="pt-BR" href="https://elevatebr.org/index.html">
+    <link rel="alternate" hreflang="en" href="https://elevatebr.org/index-en.html">
+    <link rel="alternate" hreflang="es" href="https://elevatebr.org/index-es.html">
+    <link rel="alternate" hreflang="it" href="https://elevatebr.org/index-it.html">
+    <link rel="alternate" hreflang="x-default" href="https://elevatebr.org/index.html">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -76,7 +81,7 @@
     }
     </script>
 </head>
-<body>
+<body class="page-pt">
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
@@ -95,6 +100,14 @@
                     <li class="nav-item"><a href="#recrutamento" class="nav-link" data-i18n="nav.careers">Carreiras</a></li>
                     <li class="nav-item"><a href="#contato" class="nav-link" data-i18n="nav.contact">Contato</a></li>
                 </ul>
+                <button class="lang-toggle" type="button" aria-label="Abrir idiomas" aria-expanded="false">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <button class="navbar-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <div class="language-selector">
                     <button class="lang-btn" data-lang="pt">PT</button>
                     <button class="lang-btn" data-lang="en">EN</button>
@@ -262,8 +275,10 @@
                     <p class="section-subtitle" data-i18n="partners.subtitle">Empresas que confiam na Elevate para suas soluções tecnológicas</p>
                 </div>
                 
-                <div class="partners-grid" id="partners-container">
-                    <!-- Partners will be loaded dynamically -->
+                <div class="partners-carousel-wrapper">
+                    <div class="partners-grid" id="partners-container">
+                        <!-- Partners will be loaded dynamically -->
+                    </div>
                 </div>
                 
                 <div class="partners-loading" id="partners-loading">
@@ -423,6 +438,15 @@
     </footer>
 
     <!-- JavaScript -->
+    <script>
+        window.DEFAULT_LANGUAGE = 'pt';
+        window.LANGUAGE_PAGE_MAP = {
+            pt: 'index.html',
+            en: 'index-en.html',
+            es: 'index-es.html',
+            it: 'index-it.html'
+        };
+    </script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
     <script src="js/products.js"></script>

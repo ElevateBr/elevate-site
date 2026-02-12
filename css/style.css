@@ -763,17 +763,26 @@ body {
     background: #f8f9fa;
 }
 
+.partners-carousel-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
 .partners-grid {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 120px;
     padding: 2rem 0;
-    overflow: hidden;
     position: relative;
-    width: 100%;
+    width: max-content;
     white-space: nowrap;
+    will-change: transform;
+    transition: none;
 }
 
 .partner-card {
@@ -782,8 +791,13 @@ body {
     justify-content: center;
     flex-shrink: 0;
     margin: 0 3rem;
-    height: 80px; /* Altura fixa para alinhamento consistente */
+    min-height: 80px; /* Altura mínima para alinhamento consistente */
+    height: auto;
     width: 120px; /* Largura fixa para tamanho uniforme */
+}
+
+.partner-card-no-logo {
+    min-height: 100px; /* Altura maior quando tem nome ao invés de logo */
 }
 
 .partner-logo {
@@ -809,6 +823,35 @@ body {
     justify-content: center;
     height: 100%;
     color: #666; /* Cor neutra para ícones */
+}
+
+.partner-name-fallback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 100%;
+    height: 100%;
+    padding: 0.3rem 0;
+}
+
+.partner-name-fallback i {
+    font-size: 1.8rem;
+    color: #666;
+    flex-shrink: 0;
+}
+
+.partner-name-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    line-height: 1.2;
+    max-width: 120px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 /* Tamanho uniforme para todas as logos */
@@ -1320,6 +1363,11 @@ body {
     .hero-visual {
         height: 250px;
         order: -1;
+    }
+
+    /* On PT mobile, hide hero floating cards block */
+    .page-pt .hero-visual {
+        display: none;
     }
     
     .floating-card {
