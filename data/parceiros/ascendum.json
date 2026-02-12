@@ -1,0 +1,18 @@
+{
+  "id": "Ascendum",
+  "icon": "fas fa-truck",
+  "image": "images/parceiros/logo-ascendum.webp",
+  "name": {
+    "pt": "Ascendum",
+    "en": "Ascendum",
+    "es": "Ascendum",
+    "it": "Ascendum"
+  },
+  "description": {
+    "pt": "Grupo multinacional líder na distribuição de equipamentos de construção, camiões e equipamentos agrícolas",
+    "en": "Multinational group leader in distribution of construction equipment, trucks and agricultural machinery",
+    "es": "Grupo multinacional líder en distribución de equipos de construcción, camiones y maquinaria agrícola",
+    "it": "Gruppo multinazionale leader nella distribuzione di attrezzature per edilizia, camion e macchinari agricoli"
+  },
+  "website": "https://ascendumgroup.com/pt"
+}

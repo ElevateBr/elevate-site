@@ -1,0 +1,17 @@
+{
+  "id": "COMDEVALE",
+  "icon": "fas fa-building",
+  "image": "images/parceiros/logo-comdevale.png",
+  "name": {
+    "pt": "COMDEVALE",
+    "en": "COMDEVALE",
+    "es": "COMDEVALE",
+    "it": "COMDEVALE"
+  },
+  "description": {
+    "pt": "Compania de Desenvolvimento Economico de Valença",
+    "en": "Valença Economic Development Company",
+    "es": "Compañía de Desarrollo Económico de Valença",
+    "it": "Compagnia di Sviluppo Economico di Valença"
+  }
+}

@@ -156,16 +156,22 @@ class PartnersManager {
     renderPartners(partners) {
         if (!this.partnersContainer) return;
 
-        // Verificar se precisa de carrossel baseado na quantidade de parceiros
-        const needsCarousel = this.shouldUseCarousel(partners);
+        // Sempre usar carrossel infinito quando houver mais de 1 parceiro
+        const needsCarousel = partners.length > 1;
         
         if (needsCarousel) {
-            // Duplica os parceiros para carrossel
-            const duplicatedPartners = [...partners, ...partners, ...partners];
+            // Duplica os parceiros suficientes vezes para criar loop infinito suave
+            // Duplicar várias vezes para garantir transição suave sem espaços em branco
+            // Mínimo de 4 cópias para garantir que sempre haja elementos visíveis dos dois lados
+            const duplicatedPartners = [...partners, ...partners, ...partners, ...partners, ...partners];
             this.partnersContainer.innerHTML = duplicatedPartners.map(partner => this.createPartnerCard(partner)).join('');
-            this.startCarousel();
+            
+            // Aguardar renderização antes de iniciar carrossel
+            requestAnimationFrame(() => {
+                this.startCarousel();
+            });
         } else {
-            // Parceiros fixos sem carrossel
+            // Parceiros fixos sem carrossel (apenas 1 parceiro)
             this.partnersContainer.innerHTML = partners.map(partner => this.createPartnerCard(partner)).join('');
             this.partnersContainer.style.transform = 'none';
         }
@@ -177,69 +183,118 @@ class PartnersManager {
     startCarousel() {
         if (!this.partnersContainer) return;
         
-        let currentPosition = 0;
-        const speed = 0.8; // pixels por frame - movimento mais rápido
-        let isPaused = false;
-        let animationId;
+        // Limpar animação anterior se existir
+        if (this.carouselAnimationId) {
+            cancelAnimationFrame(this.carouselAnimationId);
+        }
         
-        const animate = () => {
-            if (!isPaused) {
-                currentPosition -= speed;
-                
-                // Calcular a largura de um conjunto completo de parceiros
-                const totalWidth = this.partnersContainer.scrollWidth;
-                const singleSetWidth = totalWidth / 3; // Dividido por 3 porque duplicamos 3 vezes
-                
-                // Reset mais rápido quando chegar ao final
-                if (currentPosition <= -singleSetWidth) {
-                    currentPosition = 0;
+        // Aguardar um frame para garantir que os elementos estejam renderizados
+        requestAnimationFrame(() => {
+            // Calcular a largura real de um conjunto de parceiros
+            const firstCard = this.partnersContainer.querySelector('.partner-card');
+            if (!firstCard) return;
+            
+            // Obter a largura total de um conjunto de parceiros originais
+            const originalPartnersCount = this.partners.length;
+            
+            // Calcular a largura de um card com margens usando getBoundingClientRect
+            const cardRect = firstCard.getBoundingClientRect();
+            const cardStyle = window.getComputedStyle(firstCard);
+            const marginLeft = parseFloat(cardStyle.marginLeft) || 0;
+            const marginRight = parseFloat(cardStyle.marginRight) || 0;
+            const cardTotalWidth = cardRect.width + marginLeft + marginRight;
+            
+            // Largura de um conjunto completo de parceiros (uma cópia original)
+            const singleSetWidth = originalPartnersCount * cardTotalWidth;
+            
+            // Posição inicial: começar na segunda cópia (posição -singleSetWidth)
+            // Isso garante que quando o primeiro item sair pela esquerda, já haverá conteúdo visível à direita
+            let currentPosition = -singleSetWidth;
+            
+            const speed = 0.5; // pixels por frame - velocidade suave
+            let isPaused = false;
+            
+            const animate = () => {
+                if (!isPaused) {
+                    currentPosition -= speed;
+                    
+                    // Quando chegar ao final da segunda cópia (posição -singleSetWidth * 2),
+                    // resetar para o início da segunda cópia novamente (-singleSetWidth)
+                    // Isso cria um loop perfeito: quando a cópia 2 está saindo pela esquerda,
+                    // a cópia 3 já está entrando pela direita, e ao resetar, a cópia 2 continua o fluxo
+                    if (currentPosition <= -singleSetWidth * 2) {
+                        currentPosition = currentPosition + singleSetWidth;
+                    }
+                    
+                    this.partnersContainer.style.transform = `translateX(${currentPosition}px)`;
                 }
-                
-                this.partnersContainer.style.transform = `translateX(${currentPosition}px)`;
+                this.carouselAnimationId = requestAnimationFrame(animate);
+            };
+            
+            // Remover event listeners antigos se existirem
+            const oldMouseEnter = this.partnersContainer._mouseEnterHandler;
+            const oldMouseLeave = this.partnersContainer._mouseLeaveHandler;
+            
+            if (oldMouseEnter) {
+                this.partnersContainer.removeEventListener('mouseenter', oldMouseEnter);
             }
-            animationId = requestAnimationFrame(animate);
-        };
-        
-        // Pausar quando o mouse passar sobre o carrossel
-        this.partnersContainer.addEventListener('mouseenter', () => {
-            isPaused = true;
+            if (oldMouseLeave) {
+                this.partnersContainer.removeEventListener('mouseleave', oldMouseLeave);
+            }
+            
+            // Criar novos handlers
+            const mouseEnterHandler = () => {
+                isPaused = true;
+            };
+            
+            const mouseLeaveHandler = () => {
+                isPaused = false;
+            };
+            
+            // Armazenar referências para poder remover depois
+            this.partnersContainer._mouseEnterHandler = mouseEnterHandler;
+            this.partnersContainer._mouseLeaveHandler = mouseLeaveHandler;
+            
+            // Pausar quando o mouse passar sobre o carrossel
+            this.partnersContainer.addEventListener('mouseenter', mouseEnterHandler);
+            this.partnersContainer.addEventListener('mouseleave', mouseLeaveHandler);
+            
+            // Iniciar animação
+            this.carouselAnimationId = requestAnimationFrame(animate);
         });
-        
-        this.partnersContainer.addEventListener('mouseleave', () => {
-            isPaused = false;
-        });
-        
-        requestAnimationFrame(animate);
     }
 
     shouldUseCarousel(partners) {
-        // Se há menos de 4 parceiros, não precisa de carrossel
-        if (partners.length < 4) {
-            return false;
-        }
-        
-        // Verificar se a largura total dos parceiros excede a largura da tela
-        const estimatedPartnerWidth = 180; // 120px + 60px de margem
-        const totalPartnersWidth = partners.length * estimatedPartnerWidth;
-        const screenWidth = window.innerWidth;
-        
-        return totalPartnersWidth > screenWidth * 0.8; // 80% da largura da tela
+        // Sempre usar carrossel se houver mais de 1 parceiro
+        // Isso garante que todos os parceiros sejam exibidos em loop infinito
+        return partners.length > 1;
     }
 
     createPartnerCard(partner) {
         // Garantir que sempre tenha um ícone válido
         const icon = partner.icon || 'fas fa-building';
         
+        // Obter nome no idioma atual
+        const partnerName = partner.name && partner.name[this.currentLanguage] 
+            ? partner.name[this.currentLanguage] 
+            : (partner.name && typeof partner.name === 'string' ? partner.name : partner.id);
+        
         // Adicionar classe de clique se tiver website
         const clickableClass = partner.website ? 'clickable' : '';
         const cursorStyle = partner.website ? 'cursor: pointer;' : '';
         
+        const hasImage = !!partner.image;
+        const nameFallbackClass = hasImage ? '' : 'partner-card-no-logo';
+        
         return `
-            <div class="partner-card ${clickableClass}" data-partner-id="${partner.id}" data-website="${partner.website || ''}" style="${cursorStyle}">
+            <div class="partner-card ${clickableClass} ${nameFallbackClass}" data-partner-id="${partner.id}" data-website="${partner.website || ''}" style="${cursorStyle}">
                 <div class="partner-logo">
                     ${partner.image ? 
                         `<img src="${partner.image}" alt="${partner.id}">` : 
-                        `<i class="${icon}"></i>`
+                        `<div class="partner-name-fallback">
+                            <i class="${icon}"></i>
+                            <span class="partner-name-text">${partnerName}</span>
+                        </div>`
                     }
                 </div>
             </div>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate - Software House & Business Solutions</title>
+    <meta name="description" content="Elevate - Challenging projects demand visionary professionals. Software House specialized in innovative business solutions.">
+    <link rel="icon" type="image/svg+xml" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="keywords" content="software house, business solutions, software development, innovation, technology, elevate, IT consulting, digital transformation">
+    <meta name="author" content="Elevate">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a237e">
+    <link rel="canonical" href="https://elevatebr.org/index-en.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://elevatebr.org/index.html">
+    <link rel="alternate" hreflang="en" href="https://elevatebr.org/index-en.html">
+    <link rel="alternate" hreflang="es" href="https://elevatebr.org/index-es.html">
+    <link rel="alternate" hreflang="it" href="https://elevatebr.org/index-it.html">
+    <link rel="alternate" hreflang="x-default" href="https://elevatebr.org/index.html">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="#home" class="logo">
+                        <img src="images/elevate-logo.png" alt="Elevate" class="logo-image">
+                        <span class="logo-text">Eleva<span class="logo-underline">te</span></span>
+                    </a>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link" data-i18n="nav.products">Products</a></li>
+                    <li class="nav-item"><a href="#servicos" class="nav-link" data-i18n="nav.services">Services</a></li>
+                    <li class="nav-item"><a href="#parceiros" class="nav-link" data-i18n="nav.partners">Partners</a></li>
+                    <li class="nav-item"><a href="#recrutamento" class="nav-link" data-i18n="nav.careers">Careers</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                <button class="lang-toggle" type="button" aria-label="Open languages" aria-expanded="false">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <button class="navbar-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="language-selector">
+                    <button class="lang-btn" data-lang="pt">PT</button>
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="it">IT</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span data-i18n="hero.title.part1">Challenging projects demand</span>
+                            <span class="highlight" data-i18n="hero.title.part2">visionary professionals</span>
+                        </h1>
+                        <p class="hero-subtitle" data-i18n="hero.subtitle">
+                            Software House specialized in innovative business solutions. We transform ideas into reality through cutting-edge technology.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#servicos" class="btn btn-primary" data-i18n="hero.btn.services">Our Services</a>
+                            <a href="#contato" class="btn btn-outline" data-i18n="hero.btn.contact">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="produtos">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="products.title">Our Products</h2>
+                    <p class="section-subtitle" data-i18n="products.subtitle">Innovative solutions developed by our team of experts</p>
+                </div>
+                <div id="products-banner" class="products-banner"></div>
+                <div id="products-grid" class="products-grid-container" style="display: none;"></div>
+            </div>
+        </section>
+
+        <section id="servicos" class="servicos">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="services.title">Our Services</h2>
+                    <p class="section-subtitle" data-i18n="services.subtitle">Specialized services to boost your business</p>
+                </div>
+                <div id="servicos-container"></div>
+                <div class="servicos-loading" id="servicos-loading">
+                    <div class="loading-spinner"></div>
+                    <p data-i18n="services.loading">Loading services...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners-hero">
+            <div class="container">
+                <div class="partners-hero-content">
+                    <div class="partners-hero-text">
+                        <h1 class="partners-hero-title">
+                            <span data-i18n="partners.hero.title.part1">Partnerships</span>
+                            <span class="highlight" data-i18n="partners.hero.title.part2">that elevate</span>
+                        </h1>
+                        <p class="partners-hero-subtitle" data-i18n="partners.hero.subtitle">
+                            Together, we build the future of technology through strategic collaboration.
+                        </p>
+                        <div class="partners-hero-buttons">
+                            <a href="#parceiros" class="btn btn-primary" data-i18n="partners.hero.btn.partners">Meet Our Partners</a>
+                            <a href="#contato" class="btn btn-outline" data-i18n="partners.hero.btn.contact">Be Our Partner</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="parceiros" class="parceiros">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="partners.title">Partners</h2>
+                    <p class="section-subtitle" data-i18n="partners.subtitle">Companies that trust Elevate for their technological solutions</p>
+                </div>
+                <div class="partners-carousel-wrapper">
+                    <div class="partners-grid" id="partners-container"></div>
+                </div>
+                <div class="partners-loading" id="partners-loading">
+                    <div class="loading-spinner"></div>
+                    <p data-i18n="partners.loading">Loading partners...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recrutamento" class="recrutamento">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="careers.title">Join Our Solution Teams</h2>
+                    <p class="section-subtitle" data-i18n="careers.subtitle">Grow your career with challenging and visionary projects.</p>
+                </div>
+                <div class="vagas-grid" id="vagas-container"></div>
+                <div class="vagas-loading" id="vagas-loading">
+                    <div class="loading-spinner"></div>
+                    <p data-i18n="careers.loading">Loading opportunities...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+                    <p class="section-subtitle" data-i18n="contact.subtitle">Get in touch with us to discuss your project</p>
+                </div>
+                <div class="contato-content">
+                    <div class="contato-info">
+                        <div class="contato-item">
+                            <div class="contato-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contato-details">
+                                <h3 data-i18n="contact.address.title">Address</h3>
+                                <p>Rua Vinte Nove de Setembro, 53, 2nd floor<br>Campos Eliseos, Resende - RJ, Brazil</p>
+                            </div>
+                        </div>
+                        <div class="contato-item">
+                            <div class="contato-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="contato-details">
+                                <h3 data-i18n="contact.whatsapp.title">WhatsApp</h3>
+                                <p>+55 (24) 99940-2412</p>
+                            </div>
+                        </div>
+                        <div class="contato-item">
+                            <div class="contato-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contato-details">
+                                <h3 data-i18n="contact.email.title">Email</h3>
+                                <p>contato@elevatebr.org</p>
+                            </div>
+                        </div>
+                        <div class="contato-item">
+                            <div class="contato-icon"><i class="fas fa-clock"></i></div>
+                            <div class="contato-details">
+                                <h3 data-i18n="contact.hours.title">Business Hours</h3>
+                                <p data-i18n="contact.hours.text">Monday to Friday: 9am to 6pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapa-container"><div id="mapa" class="mapa"></div></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="floating-careers-btn" class="floating-careers-btn" style="display: none;">
+        <div class="floating-btn-content">
+            <div class="floating-btn-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="floating-btn-text">
+                <span class="floating-btn-title" data-i18n="floating.careers.title">Open Positions!</span>
+                <span class="floating-btn-subtitle" data-i18n="floating.careers.subtitle">Join our team</span>
+            </div>
+        </div>
+        <div class="floating-btn-arrow"><i class="fas fa-chevron-right"></i></div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Elevate</h3>
+                    <p class="footer-description" data-i18n="footer.description">Challenging projects demand visionary professionals.</p>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 Elevate. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script>
+        window.DEFAULT_LANGUAGE = 'en';
+        window.LANGUAGE_PAGE_MAP = {
+            pt: 'index.html',
+            en: 'index-en.html',
+            es: 'index-es.html',
+            it: 'index-it.html'
+        };
+    </script>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/vagas.js"></script>
+    <script src="js/partners.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

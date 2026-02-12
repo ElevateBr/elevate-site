@@ -1,0 +1,18 @@
+{
+  "id": "Ascendi",
+  "icon": "fas fa-road",
+  "image": "images/parceiros/logo-ascendi.png",
+  "name": {
+    "pt": "Ascendi",
+    "en": "Ascendi",
+    "es": "Ascendi",
+    "it": "Ascendi"
+  },
+  "description": {
+    "pt": "Operadora de infraestruturas de transporte, concessionária de autoestradas e gestora de portagens",
+    "en": "Transport infrastructure operator, motorway concessionaire and toll management company",
+    "es": "Operadora de infraestructuras de transporte, concesionaria de autopistas y gestora de peajes",
+    "it": "Operatore di infrastrutture di trasporto, concessionario autostradale e gestore di pedaggi"
+  },
+  "website": "https://www.ascendi.pt"
+}
