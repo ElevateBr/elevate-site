@@ -24,6 +24,11 @@
     <link rel="alternate" hreflang="x-default" href="https://elevatebr.org/index.html">
 </head>
 <body>
+    <div id="splash" class="splash" role="presentation" aria-hidden="false">
+        <div class="splash-inner">
+            <img src="images/elevate-logo.png" alt="Elevate" class="splash-logo">
+        </div>
+    </div>
     <header class="header">
         <nav class="navbar">
             <div class="container">
@@ -38,6 +43,7 @@
                     <li class="nav-item"><a href="#produtos" class="nav-link" data-i18n="nav.products">Products</a></li>
                     <li class="nav-item"><a href="#servicos" class="nav-link" data-i18n="nav.services">Services</a></li>
                     <li class="nav-item"><a href="#parceiros" class="nav-link" data-i18n="nav.partners">Partners</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link" data-i18n="nav.blog">Blog</a></li>
                     <li class="nav-item"><a href="#recrutamento" class="nav-link" data-i18n="nav.careers">Careers</a></li>
                     <li class="nav-item"><a href="#contato" class="nav-link" data-i18n="nav.contact">Contact</a></li>
                 </ul>
@@ -80,6 +86,35 @@
             </div>
         </section>
 
+        <!-- Especializações / Specializations Section -->
+        <section id="especializacoes" class="especializacoes">
+            <div class="container">
+                <div class="especializacoes-header">
+                    <h2 class="especializacoes-title" data-i18n="hero.specializations.title">Specializations</h2>
+                </div>
+                <div class="especializacoes-grid">
+                    <div class="especializacoes-card">
+                        <span class="especializacoes-card-label" data-i18n="hero.specializations.sap">SAP</span>
+                        <ul class="especializacoes-list" aria-label="SAP technologies">
+                            <li><span class="especializacoes-pill" data-i18n="hero.specializations.sap.btp">SAP BTP</span></li>
+                            <li><span class="especializacoes-pill" data-i18n="hero.specializations.sap.ui5">SAP UI5/Fiori</span></li>
+                            <li><span class="especializacoes-pill" data-i18n="hero.specializations.sap.cap">SAP CAP</span></li>
+                            <li><span class="especializacoes-pill" data-i18n="hero.specializations.sap.integration">SAP Integration Suite</span></li>
+                        </ul>
+                    </div>
+                    <div class="especializacoes-card">
+                        <span class="especializacoes-card-label" data-i18n="hero.specializations.open">Open Source</span>
+                        <ul class="especializacoes-list" aria-label="Open Source technologies">
+                            <li><span class="especializacoes-pill" data-i18n="hero.specializations.open.react">React Web</span></li>
+                            <li><span class="especializacoes-pill" data-i18n="hero.specializations.open.react.mobile">React Mobile</span></li>
+                            <li><span class="especializacoes-pill" data-i18n="hero.specializations.open.nodejs">Node.js</span></li>
+                            <li><span class="especializacoes-pill" data-i18n="hero.specializations.open.java">Java</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="produtos" class="produtos">
             <div class="container">
                 <div class="section-header">
@@ -88,6 +123,19 @@
                 </div>
                 <div id="products-banner" class="products-banner"></div>
                 <div id="products-grid" class="products-grid-container" style="display: none;"></div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="blog.title">Blog / Articles</h2>
+                    <p class="section-subtitle" data-i18n="blog.subtitle">Content and insights about technology, careers and digital transformation.</p>
+                </div>
+                <div id="blog-container"></div>
+                <div id="blog-loading" class="blog-loading">
+                    <div class="loading-spinner"></div>
+                </div>
             </div>
         </section>
 
@@ -236,6 +284,7 @@
     <script src="js/services.js"></script>
     <script src="js/vagas.js"></script>
     <script src="js/partners.js"></script>
+    <script src="js/blog.js"></script>
     <script src="js/map.js"></script>
     <script src="js/init.js"></script>
 </body>

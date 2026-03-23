@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": "ia-cargo-desaparecer",
+      "type": "video",
+      "youtube_id": "1NhADVsAEJo",
+      "youtube_start": 41,
+      "youtube_url": "https://www.youtube.com/watch?v=1NhADVsAEJo&t=41s",
+      "article_url": "blog-ia-cargo-desaparecer.html",
+      "title": {
+        "pt": "A IA não vai te demitir, mas seu cargo vai desaparecer.",
+        "en": "AI will not fire you, but your role will disappear.",
+        "es": "La IA no te va a despedir, pero tu cargo va a desaparecer.",
+        "it": "L'IA non ti licenziera, ma il tuo ruolo scomparira."
+      },
+      "summary": {
+        "pt": "Entenda por que a IA transforma funções e como se preparar para os novos papéis do mercado.",
+        "en": "Understand why AI transforms roles and how to prepare for the new positions in the market.",
+        "es": "Entiende por que la IA transforma funciones y como prepararte para los nuevos roles del mercado.",
+        "it": "Capisci perche l'IA trasforma i ruoli e come prepararti alle nuove posizioni del mercato."
+      }
+    }
+  ]
+}

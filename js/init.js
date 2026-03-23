@@ -1,3 +1,28 @@
+// Splash / Tela de boas-vindas
+function initSplash() {
+    const splash = document.getElementById('splash');
+    if (!splash) return;
+
+    function hideSplash() {
+        splash.classList.add('splash--hidden');
+        splash.setAttribute('aria-hidden', 'true');
+        setTimeout(() => splash.remove(), 600);
+    }
+
+    const duration = 2500;
+    const timer = setTimeout(hideSplash, duration);
+
+    splash.addEventListener('click', () => {
+        clearTimeout(timer);
+        hideSplash();
+    }, { once: true });
+
+    document.addEventListener('keydown', () => {
+        clearTimeout(timer);
+        hideSplash();
+    }, { once: true });
+}
+
 // Initialization Script
 class SiteInitializer {
     constructor() {
@@ -6,13 +31,13 @@ class SiteInitializer {
     }
 
     init() {
-        
-        // Aguardar DOM estar pronto
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', () => {
+                initSplash();
                 this.initializeManagers();
             });
         } else {
+            initSplash();
             this.initializeManagers();
         }
     }
