@@ -15,6 +15,7 @@ class I18n {
                 'nav.products': 'Produtos',
                 'nav.services': 'Serviços',
                 'nav.partners': 'Parceiros',
+                'nav.blog': 'Blog',
                 'nav.careers': 'Carreiras',
                 'nav.contact': 'Contato',
 
@@ -47,6 +48,14 @@ class I18n {
                 'products.visit': 'Visitar',
                 'products.coming_soon': 'Em Breve',
                 'products.view_all': 'Ver Todos',
+
+                // Blog
+                'blog.title': 'Blog / Artigos',
+                'blog.subtitle': 'Conteúdos e reflexões sobre tecnologia, carreira e transformação digital.',
+                'blog.featured.label': 'Vídeo em destaque',
+                'blog.featured.title': 'A IA não vai te demitir, mas seu cargo vai desaparecer.',
+                'blog.featured.read': 'Ler artigo',
+                'blog.featured.watch': 'Assistir no YouTube',
 
                 // Serviços
                 'services.title': 'Nossos Serviços',
@@ -136,6 +145,7 @@ class I18n {
                 'nav.products': 'Products',
                 'nav.services': 'Services',
                 'nav.partners': 'Partners',
+                'nav.blog': 'Blog',
                 'nav.careers': 'Careers',
                 'nav.contact': 'Contact',
 
@@ -168,6 +178,14 @@ class I18n {
                 'products.visit': 'Visit',
                 'products.coming_soon': 'Coming Soon',
                 'products.view_all': 'View All',
+
+                // Blog
+                'blog.title': 'Blog / Articles',
+                'blog.subtitle': 'Content and insights about technology, careers and digital transformation.',
+                'blog.featured.label': 'Featured video',
+                'blog.featured.title': 'AI will not fire you, but your role will disappear.',
+                'blog.featured.read': 'Read article',
+                'blog.featured.watch': 'Watch on YouTube',
 
                 // Services
                 'services.title': 'Our Services',
@@ -257,6 +275,7 @@ class I18n {
                 'nav.products': 'Productos',
                 'nav.services': 'Servicios',
                 'nav.partners': 'Socios',
+                'nav.blog': 'Blog',
                 'nav.careers': 'Carreras',
                 'nav.contact': 'Contacto',
 
@@ -291,6 +310,14 @@ class I18n {
                 'products.visit': 'Visitar',
                 'products.coming_soon': 'Próximamente',
                 'products.view_all': 'Ver Todos',
+
+                // Blog
+                'blog.title': 'Blog / Artículos',
+                'blog.subtitle': 'Contenido y reflexiones sobre tecnología, carrera y transformación digital.',
+                'blog.featured.label': 'Vídeo destacado',
+                'blog.featured.title': 'La IA no te va a despedir, pero tu cargo va a desaparecer.',
+                'blog.featured.read': 'Leer artículo',
+                'blog.featured.watch': 'Ver en YouTube',
 
                 // Servicios
                 'services.title': 'Nuestros Servicios',
@@ -380,6 +407,7 @@ class I18n {
                 'nav.products': 'Prodotti',
                 'nav.services': 'Servizi',
                 'nav.partners': 'Partner',
+                'nav.blog': 'Blog',
                 'nav.careers': 'Carriere',
                 'nav.contact': 'Contatto',
 
@@ -412,6 +440,14 @@ class I18n {
                 'products.visit': 'Visita',
                 'products.coming_soon': 'Prossimamente',
                 'products.view_all': 'Vedi Tutti',
+
+                // Blog
+                'blog.title': 'Blog / Articoli',
+                'blog.subtitle': 'Contenuti e riflessioni su tecnologia, carriera e trasformazione digitale.',
+                'blog.featured.label': 'Video in evidenza',
+                'blog.featured.title': 'L\'IA non ti licenziera, ma il tuo ruolo scomparira.',
+                'blog.featured.read': 'Leggi articolo',
+                'blog.featured.watch': 'Guarda su YouTube',
 
                 // Servizi
                 'services.title': 'I Nostri Servizi',
