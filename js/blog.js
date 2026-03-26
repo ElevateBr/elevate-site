@@ -51,21 +51,28 @@ class BlogManager {
         const title = this.getText(post, 'title');
         const summary = this.getText(post, 'summary');
         const youtubeId = post.youtube_id;
-        const thumbnail = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+        const hasVideo = Boolean(youtubeId && post.youtube_url);
+        const thumbnail = hasVideo ? `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg` : '';
         const readLabel = window.i18n ? window.i18n.getText('blog.featured.read') : 'Ler artigo';
         const watchLabel = window.i18n ? window.i18n.getText('blog.featured.watch') : 'Assistir no YouTube';
 
         return `
             <article class="blog-card">
                 <a class="blog-card-media" href="${post.article_url}">
-                    <img src="${thumbnail}" alt="${title}" loading="lazy">
+                    ${hasVideo
+                        ? `<img src="${thumbnail}" alt="${title}" loading="lazy">`
+                        : `<div class="blog-card-media-placeholder"><i class="fas fa-newspaper"></i></div>`
+                    }
                 </a>
                 <div class="blog-card-content">
                     <h3 class="blog-card-title">${title}</h3>
                     <p class="blog-card-summary">${summary}</p>
                     <div class="hero-buttons">
                         <a class="btn btn-primary" href="${post.article_url}">${readLabel}</a>
-                        <a class="btn btn-outline" href="${post.youtube_url}" target="_blank" rel="noopener noreferrer">${watchLabel}</a>
+                        ${hasVideo
+                            ? `<a class="btn btn-outline" href="${post.youtube_url}" target="_blank" rel="noopener noreferrer">${watchLabel}</a>`
+                            : ''
+                        }
                     </div>
                 </div>
             </article>
