@@ -617,6 +617,17 @@ body {
     display: block;
 }
 
+.blog-card-media-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(135deg, #1a237e, #111827);
+    font-size: 2rem;
+}
+
 .blog-card-content {
     padding: 1rem;
 }
@@ -637,6 +648,145 @@ body {
 .blog-loading {
     text-align: center;
     padding: 1rem 0;
+}
+
+/* Blog article details */
+.blog-article {
+    position: relative;
+}
+
+.blog-article .blog-content {
+    padding: 1.5rem 1.35rem 1.75rem;
+}
+
+.blog-article .blog-content > p {
+    margin: 0 0 0.95rem;
+    line-height: 1.75;
+    font-size: 1.04rem;
+    color: #1f2937;
+}
+
+.blog-article .blog-title {
+    margin-top: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.blog-article h3 {
+    margin-top: 1.2rem;
+    margin-bottom: 0.45rem;
+    font-size: 1.25rem;
+    line-height: 1.35;
+    color: #111827;
+}
+
+.blog-article ul,
+.blog-article ol {
+    margin: 0.45rem 0 1rem 1.2rem;
+    padding: 0;
+}
+
+.blog-article li {
+    margin-bottom: 0.45rem;
+    line-height: 1.65;
+    color: #1f2937;
+}
+
+.article-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.article-topic {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #1f2937;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.article-alert {
+    border: 1px solid rgba(234, 179, 8, 0.35);
+    background: linear-gradient(135deg, #fffdf2 0%, #fff8db 100%);
+    border-radius: 14px;
+    padding: 1rem;
+    margin: 1rem 0 1.3rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+
+.article-alert i {
+    color: #ca8a04;
+    margin-top: 0.15rem;
+}
+
+.article-risk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.9rem;
+    margin: 1rem 0 1.25rem;
+}
+
+.article-risk-card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    background: #fff;
+    padding: 0.9rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+}
+
+.article-risk-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.45rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.article-risk-title i {
+    color: #b91c1c;
+}
+
+.article-conclusion {
+    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 1rem;
+    margin-top: 1.25rem;
+}
+
+.article-conclusion .blog-title {
+    color: #fff;
+}
+
+.article-conclusion p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .blog-article .blog-content {
+        padding: 1.1rem 1rem 1.35rem;
+    }
+
+    .blog-article .blog-content > p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .blog-article h3 {
+        font-size: 1.16rem;
+    }
+
+    .article-risk-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Products Banner - carrossel de apps */

@@ -1,6 +1,26 @@
 {
   "posts": [
     {
+      "id": "mau-uso-ia",
+      "type": "video",
+      "youtube_id": "-4BIUvQH0uc",
+      "youtube_start": 0,
+      "youtube_url": "https://youtu.be/-4BIUvQH0uc",
+      "article_url": "blog-mau-uso-ia.html",
+      "title": {
+        "pt": "O mau uso da IA já começou, e quase ninguém está falando disso",
+        "en": "The misuse of AI has already started, and almost no one is talking about it",
+        "es": "El mal uso de la IA ya comenzó, y casi nadie está hablando de eso",
+        "it": "Il cattivo uso dell'IA e gia iniziato, e quasi nessuno ne sta parlando"
+      },
+      "summary": {
+        "pt": "As 5 falhas mais comuns no uso corporativo de IA e como evitar riscos de dados, decisões e estratégia.",
+        "en": "The 5 most common failures in corporate AI usage and how to avoid data, decision and strategy risks.",
+        "es": "Los 5 fallos mas comunes en el uso corporativo de IA y como evitar riesgos de datos, decisiones y estrategia.",
+        "it": "I 5 errori piu comuni nell'uso aziendale dell'IA e come evitare rischi su dati, decisioni e strategia."
+      }
+    },
+    {
       "id": "ia-cargo-desaparecer",
       "type": "video",
       "youtube_id": "1NhADVsAEJo",
