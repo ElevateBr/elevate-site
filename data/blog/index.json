@@ -1,6 +1,26 @@
 {
   "posts": [
     {
+      "id": "tech-radar-ep3-automacao",
+      "type": "video",
+      "youtube_id": "_I_iEj8YYuM",
+      "youtube_start": 0,
+      "youtube_url": "https://youtu.be/_I_iEj8YYuM",
+      "article_url": "blog-automacao-custo-estrategia.html",
+      "title": {
+        "pt": "Automação não é sobre tecnologia — é sobre custo",
+        "en": "Automation is not about technology — it is about cost",
+        "es": "La automatización no es sobre tecnología — es sobre costo",
+        "it": "L'automazione non riguarda la tecnologia — riguarda il costo"
+      },
+      "summary": {
+        "pt": "Por que automação é decisão de custo e eficiência: processos, governança e os 3 pilares para extrair valor real.",
+        "en": "Why automation is a cost and efficiency decision: process, governance and the three pillars to extract real value.",
+        "es": "Por qué la automatización es una decisión de costo y eficiencia: procesos, gobernanza y los tres pilares para obtener valor real.",
+        "it": "Perche l'automazione e una decisione su costi ed efficienza: processi, governance e i tre pilastri per estrarre valore reale."
+      }
+    },
+    {
       "id": "mau-uso-ia",
       "type": "video",
       "youtube_id": "-4BIUvQH0uc",
