@@ -60,10 +60,6 @@
     }
   },
   "features": {
-    "googleMaps": {
-      "enabled": true,
-      "apiKey": "YOUR_API_KEY_HERE"
-    },
     "contactForm": {
       "enabled": true,
       "autoSave": true,
@@ -89,21 +85,6 @@
     "robots": "index, follow",
     "ogImage": "/images/og-image.jpg",
     "twitterCard": "summary_large_image"
-  },
-  "map": {
-    "apiKey": "YOUR_GOOGLE_MAPS_API_KEY",
-    "center": {
-      "lat": -22.4689,
-      "lng": -44.4469
-    },
-    "zoom": 15,
-    "marker": {
-      "title": "Elevate",
-      "position": {
-        "lat": -22.4689,
-        "lng": -44.4469
-      }
-    }
   },
   "deployment": {
     "bucket": "elevate-website",

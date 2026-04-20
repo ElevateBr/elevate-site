@@ -92,7 +92,7 @@ class I18n {
                 // Partners Hero
                 'partners.hero.title.part1': 'Parcerias',
                 'partners.hero.title.part2': 'que elevam',
-                'partners.hero.subtitle': 'Juntos, construímos o futuro da tecnologia. Nossas parcerias estratégicas nos permitem oferecer soluções ainda mais inovadoras e abrangentes para nossos clientes.',
+                'partners.hero.subtitle': 'Juntos, construímos o futuro da tecnologia.\nNossas parcerias estratégicas nos permitem oferecer soluções ainda mais inovadoras e abrangentes para nossos clientes.',
                 'partners.hero.btn.partners': 'Conheça Nossos Parceiros',
                 'partners.hero.btn.contact': 'Seja Nosso Parceiro',
                 'partners.hero.card.collaboration': 'Colaboração',
@@ -222,7 +222,7 @@ class I18n {
                 // Partners Hero
                 'partners.hero.title.part1': 'Partnerships',
                 'partners.hero.title.part2': 'that elevate',
-                'partners.hero.subtitle': 'Together, we build the future of technology. Our strategic partnerships allow us to offer even more innovative and comprehensive solutions for our clients.',
+                'partners.hero.subtitle': 'Together, we build the future of technology.\nOur strategic partnerships allow us to offer even more innovative and comprehensive solutions for our clients.',
                 'partners.hero.btn.partners': 'Meet Our Partners',
                 'partners.hero.btn.contact': 'Be Our Partner',
                 'partners.hero.card.collaboration': 'Collaboration',
@@ -354,7 +354,7 @@ class I18n {
                 // Partners Hero
                 'partners.hero.title.part1': 'Alianzas',
                 'partners.hero.title.part2': 'que elevan',
-                'partners.hero.subtitle': 'Juntos, construimos el futuro de la tecnología. Nuestras alianzas estratégicas nos permiten ofrecer soluciones aún más innovadoras y integrales para nuestros clientes.',
+                'partners.hero.subtitle': 'Juntos, construimos el futuro de la tecnología.\nNuestras alianzas estratégicas nos permiten ofrecer soluciones aún más innovadoras y integrales para nuestros clientes.',
                 'partners.hero.btn.partners': 'Conoce Nuestros Socios',
                 'partners.hero.btn.contact': 'Sé Nuestro Socio',
                 'partners.hero.card.collaboration': 'Colaboración',
@@ -484,7 +484,7 @@ class I18n {
                 // Partners Hero
                 'partners.hero.title.part1': 'Partnership',
                 'partners.hero.title.part2': 'che elevano',
-                'partners.hero.subtitle': 'Insieme costruiamo il futuro della tecnologia. Le nostre partnership strategiche ci permettono di offrire soluzioni ancora più innovative e complete ai nostri clienti.',
+                'partners.hero.subtitle': 'Insieme costruiamo il futuro della tecnologia.\nLe nostre partnership strategiche ci permettono di offrire soluzioni ancora più innovative e complete ai nostri clienti.',
                 'partners.hero.btn.partners': 'Scopri i Nostri Partner',
                 'partners.hero.btn.contact': 'Diventa Nostro Partner',
                 'partners.hero.card.collaboration': 'Collaborazione',

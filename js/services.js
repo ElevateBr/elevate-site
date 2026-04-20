@@ -95,11 +95,12 @@ class ServicesManager {
             console.error('ServicesManager: Missing features for service:', service.id, 'in language:', lang);
             return '';
         }
-        
+
         // O botão de expandir só aparece no mobile
         const isMobile = typeof window !== 'undefined' ? window.innerWidth <= 768 : false;
         // O botão sempre aparece, mas a posição depende do estado do card
         const expandBtn = `<span class="servico-expand-btn" tabindex="0" aria-label="${this.getText('services.see_more')}">${this.getText('services.see_more')}</span>`;
+
         return `
             <div class="servico-card compact" data-service-id="${service.id}">
                 <div class="servico-header">
@@ -198,6 +199,7 @@ class ServicesManager {
                     }
                 }
             });
+
             // Clique no botão de expandir/contrair
             const expandBtn = card.querySelector('.servico-expand-btn');
             if (expandBtn) {

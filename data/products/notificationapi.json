@@ -19,7 +19,7 @@
     "it": "API di notifiche in tempo reale"
   },
   "url": "https://notification.elevatebr.org",
-  "image": "images/products/notificationapi-logo.png",
+  "image": "images/products/testImage.png",
   "icon": "fas fa-bell",
   "category": "api",
   "status": "active",

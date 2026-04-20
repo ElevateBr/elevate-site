@@ -84,10 +84,6 @@ body {
     letter-spacing: -0.02em;
 }
 
-.logo-text {
-    /* Removed underline from entire text */
-}
-
 .logo-underline {
     text-decoration: underline;
     text-underline-offset: 3px;
@@ -109,24 +105,38 @@ body {
     min-height: 100dvh;
     display: flex;
     align-items: center;
-    background: linear-gradient(160deg, #0f172a 0%, #1e293b 35%, #334155 100%);
+    background: #0f172a;
 }
 
 .hero::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(ellipse 80% 50% at 70% 20%, rgba(255, 215, 0, 0.12) 0%, transparent 50%),
-                radial-gradient(ellipse 60% 40% at 20% 80%, rgba(63, 81, 181, 0.15) 0%, transparent 50%);
+    inset: -28px;
+    z-index: 0;
+    background-image: url("../images/bannerImage.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    transform: scale(1.08);
+    pointer-events: none;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        linear-gradient(160deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.82) 40%, rgba(51, 65, 85, 0.78) 100%),
+        radial-gradient(ellipse 80% 50% at 70% 20%, rgba(255, 215, 0, 0.12) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 20% 80%, rgba(63, 81, 181, 0.15) 0%, transparent 50%);
     pointer-events: none;
 }
 
 .hero .container {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
 }
 
@@ -1603,6 +1613,13 @@ body {
 
 .mapa-container {
     margin-top: 3rem;
+}
+
+.mapa-container iframe {
+    width: 80vw;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 .mapa {

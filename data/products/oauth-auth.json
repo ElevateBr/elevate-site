@@ -19,7 +19,7 @@
     "it": "Servizio di autenticazione OAuth 2.0"
   },
   "url": "https://useradmin.elevatebr.org",
-  "image": "images/products/placeholder.svg",
+  "image": "images/elevate-logo.png",
   "icon": "fas fa-shield-alt",
   "category": "security",
   "status": "active",
