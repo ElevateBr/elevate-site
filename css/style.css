@@ -84,10 +84,6 @@ body {
     letter-spacing: -0.02em;
 }
 
-.logo-text {
-    /* Removed underline from entire text */
-}
-
 .logo-underline {
     text-decoration: underline;
     text-underline-offset: 3px;
