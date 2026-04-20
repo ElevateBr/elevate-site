@@ -71,11 +71,13 @@ class ProductsManager {
         const lang = this.currentLanguage;
         // Usa placeholder se a imagem não existir ou for inválida
         const imageUrl = product.image || `images/products/${product.id}-logo.png`;
+        console.log();
+        
         const fallbackIcon = `<div class="banner-image-fallback"><i class="${product.icon}"></i></div>`;
         return `
             <div class="banner-slide" data-slide="${index}">
                 <div class="banner-content">
-                    <div class="banner-image">
+                    <div class="banner-image" style="overflow: hidden;">
                         <img src="${imageUrl}" alt="${product.name[lang]}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         ${fallbackIcon}
                     </div>
