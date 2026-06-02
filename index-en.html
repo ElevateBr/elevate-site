@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Zen+Dots&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta name="keywords" content="software house, business solutions, software development, innovation, technology, elevate, IT consulting, digital transformation">
     <meta name="author" content="Elevate">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#1a237e">
+    <meta name="theme-color" content="#000000">
     <link rel="canonical" href="https://elevatebr.org/index-en.html">
     <link rel="alternate" hreflang="pt-BR" href="https://elevatebr.org/index.html">
     <link rel="alternate" hreflang="en" href="https://elevatebr.org/index-en.html">
@@ -53,6 +53,7 @@
                 </div>
                 <ul class="navbar-nav">
                     <li class="nav-item"><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                    <li class="nav-item"><a href="#quem-somos" class="nav-link" data-i18n="nav.about">About Us</a></li>
                     <li class="nav-item"><a href="#produtos" class="nav-link" data-i18n="nav.products">Products</a></li>
                     <li class="nav-item"><a href="#servicos" class="nav-link" data-i18n="nav.services">Services</a></li>
                     <li class="nav-item"><a href="#parceiros" class="nav-link" data-i18n="nav.partners">Partners</a></li>
@@ -84,12 +85,9 @@
                 <div class="hero-content">
                     <div class="hero-text">
                         <h1 class="hero-title">
-                            <span data-i18n="hero.title.part1">Challenging projects demand</span>
-                            <span class="highlight" data-i18n="hero.title.part2">visionary professionals</span>
+                            <span data-i18n="hero.title.part1">We elevate ideas.</span>
+                            <span class="highlight" data-i18n="hero.title.part2">We drive results.</span>
                         </h1>
-                        <p class="hero-subtitle" data-i18n="hero.subtitle">
-                            Software House specialized in innovative business solutions. We transform ideas into reality through cutting-edge technology.
-                        </p>
                         <div class="hero-buttons">
                             <a href="#servicos" class="btn btn-primary" data-i18n="hero.btn.services">Our Services</a>
                             <a href="#contato" class="btn btn-outline" data-i18n="hero.btn.contact">Contact Us</a>
@@ -99,15 +97,46 @@
             </div>
         </section>
 
-        <!-- Especializações / Specializations Section -->
+        <section id="quem-somos" class="quem-somos">
+            <div class="container">
+                <div class="quem-somos-intro">
+                    <h2 class="quem-somos-title" data-i18n="about.title">About Us</h2>
+                    <p class="quem-somos-subtitle" data-i18n="about.subtitle">Elevating businesses through technology, partnership, and technical excellence.</p>
+                    <p class="quem-somos-text" data-i18n="about.text">We are a Software House based in Resende, Brazil, focused on enterprise solutions and SaaS product development that combine technical rigor with business vision. From architecture design to production delivery, always in close partnership with our clients.</p>
+                </div>
+                <div class="quem-somos-strip">
+                    <div class="quem-somos-item">
+                        <i class="fas fa-bullseye" aria-hidden="true"></i>
+                        <h3 class="quem-somos-item-title" data-i18n="about.mission.title">Mission</h3>
+                        <p class="quem-somos-item-text" data-i18n="about.mission.text">Deliver technology solutions that create real impact, with quality, agility, and proximity.</p>
+                    </div>
+                    <div class="quem-somos-item">
+                        <i class="fas fa-eye" aria-hidden="true"></i>
+                        <h3 class="quem-somos-item-title" data-i18n="about.vision.title">Vision</h3>
+                        <p class="quem-somos-item-text" data-i18n="about.vision.text">To be a reference in challenging projects that demand visionary professionals and long-term partnerships.</p>
+                    </div>
+                    <div class="quem-somos-item">
+                        <i class="fas fa-handshake" aria-hidden="true"></i>
+                        <h3 class="quem-somos-item-title" data-i18n="about.values.title">How we work</h3>
+                        <p class="quem-somos-item-text" data-i18n="about.values.text">Transparency, collaboration, and continuous improvement in every delivery—from discovery to support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Especializações / Specializations -->
         <section id="especializacoes" class="especializacoes">
             <div class="container">
-                <div class="especializacoes-header">
+                <div class="especializacoes-intro">
                     <h2 class="especializacoes-title" data-i18n="hero.specializations.title">Specializations</h2>
+                    <p class="especializacoes-lead" data-i18n="hero.specializations.subtitle">Technologies and stacks our team excels in.</p>
                 </div>
-                <div class="especializacoes-grid">
-                    <div class="especializacoes-card">
-                        <span class="especializacoes-card-label" data-i18n="hero.specializations.sap">SAP</span>
+                <div class="especializacoes-strip">
+                    <div class="especializacoes-col">
+                        <div class="especializacoes-col-header">
+                            <i class="fas fa-sitemap" aria-hidden="true"></i>
+                            <h3 class="especializacoes-col-title" data-i18n="hero.specializations.sap">SAP</h3>
+                        </div>
                         <ul class="especializacoes-list" aria-label="SAP technologies">
                             <li><span class="especializacoes-pill" data-i18n="hero.specializations.sap.btp">SAP BTP</span></li>
                             <li><span class="especializacoes-pill" data-i18n="hero.specializations.sap.ui5">SAP UI5/Fiori</span></li>
@@ -115,8 +144,11 @@
                             <li><span class="especializacoes-pill" data-i18n="hero.specializations.sap.integration">SAP Integration Suite</span></li>
                         </ul>
                     </div>
-                    <div class="especializacoes-card">
-                        <span class="especializacoes-card-label" data-i18n="hero.specializations.open">Open Source</span>
+                    <div class="especializacoes-col">
+                        <div class="especializacoes-col-header">
+                            <i class="fas fa-code-branch" aria-hidden="true"></i>
+                            <h3 class="especializacoes-col-title" data-i18n="hero.specializations.open">Open Source</h3>
+                        </div>
                         <ul class="especializacoes-list" aria-label="Open Source technologies">
                             <li><span class="especializacoes-pill" data-i18n="hero.specializations.open.react">React Web</span></li>
                             <li><span class="especializacoes-pill" data-i18n="hero.specializations.open.react.mobile">React Mobile</span></li>
@@ -134,8 +166,7 @@
                     <h2 class="section-title" data-i18n="products.title">Our Products</h2>
                     <p class="section-subtitle" data-i18n="products.subtitle">Innovative solutions developed by our team of experts</p>
                 </div>
-                <div id="products-banner" class="products-banner"></div>
-                <div id="products-grid" class="products-grid-container" style="display: none;"></div>
+                <div id="products-banner" class="products-strip" role="list"></div>
             </div>
         </section>
 
@@ -166,33 +197,30 @@
             </div>
         </section>
 
-        <section class="partners-hero">
+        <section id="parceiros" class="parceiros">
             <div class="container">
-                <div class="partners-hero-content">
-                    <div class="partners-hero-text">
-                        <h1 class="partners-hero-title">
+                <div class="parceiros-intro">
+                    <div class="parceiros-intro-text">
+                        <h2 class="parceiros-title">
                             <span data-i18n="partners.hero.title.part1">Partnerships</span>
                             <span class="highlight" data-i18n="partners.hero.title.part2">that elevate</span>
-                        </h1>
-                        <p class="partners-hero-subtitle" data-i18n="partners.hero.subtitle">Together, we build the future of technology.
-Our strategic partnerships allow us to offer even more innovative and comprehensive solutions for our clients.</p>
-                        <div class="partners-hero-buttons">
-                            <a href="#parceiros" class="btn btn-primary" data-i18n="partners.hero.btn.partners">Meet Our Partners</a>
-                            <a href="#contato" class="btn btn-outline" data-i18n="partners.hero.btn.contact">Be Our Partner</a>
+                        </h2>
+                        <p class="parceiros-lead" data-i18n="partners.hero.subtitle">Together, we build the future of technology. Our strategic partnerships allow us to offer even more innovative and comprehensive solutions for our clients.</p>
+                        <p class="parceiros-tagline" data-i18n="partners.subtitle">Companies that trust Elevate for their technological solutions</p>
+                    </div>
+                    <div class="parceiros-intro-aside">
+                        <div class="parceiros-visual" aria-hidden="true">
+                            <img src="images/parceiros-partnership.png" alt="" width="400" height="400" decoding="async">
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="parceiros" class="parceiros">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title" data-i18n="partners.title">Partners</h2>
-                    <p class="section-subtitle" data-i18n="partners.subtitle">Companies that trust Elevate for their technological solutions</p>
+                <div class="partners-showcase">
+                    <div class="partners-carousel-wrapper">
+                        <div class="partners-grid" id="partners-container"></div>
+                    </div>
                 </div>
-                <div class="partners-carousel-wrapper">
-                    <div class="partners-grid" id="partners-container"></div>
+                <div class="parceiros-actions">
+                    <a href="#contato" class="btn btn-primary" data-i18n="partners.hero.btn.contact">Be Our Partner</a>
                 </div>
                 <div class="partners-loading" id="partners-loading">
                     <div class="loading-spinner"></div>
@@ -221,48 +249,52 @@ Our strategic partnerships allow us to offer even more innovative and comprehens
                     <h2 class="section-title" data-i18n="contact.title">Contact</h2>
                     <p class="section-subtitle" data-i18n="contact.subtitle">Get in touch with us to discuss your project</p>
                 </div>
-                <div class="contato-content">
-                    <div class="contato-info">
-                        <div class="contato-item">
-                            <div class="contato-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div class="contato-details">
-                                <h3 data-i18n="contact.address.title">Address</h3>
-                                <p>Rua Vinte Nove de Setembro, 53, 2nd floor<br>Campos Eliseos, Resende - RJ, Brazil</p>
-                            </div>
+                <div class="contato-layout">
+                    <div class="contato-panel">
+                        <div class="contato-strip" role="list">
+                            <article class="contato-item" role="listitem">
+                                <i class="fas fa-map-marker-alt contato-icon" aria-hidden="true"></i>
+                                <div class="contato-details">
+                                    <h3 data-i18n="contact.address.title">Address</h3>
+                                    <p>Rua Vinte Nove de Setembro, 53, 2nd floor<br>Campos Eliseos, Resende - RJ, Brazil</p>
+                                    <a class="contato-link" href="https://www.google.com/maps/search/?api=1&amp;query=Elevate+Inova%C3%A7%C3%B5es+Coworking+Resende" target="_blank" rel="noopener noreferrer" data-i18n="contact.map.link">View on map</a>
+                                </div>
+                            </article>
+                            <article class="contato-item" role="listitem">
+                                <i class="fab fa-whatsapp contato-icon" aria-hidden="true"></i>
+                                <div class="contato-details">
+                                    <h3 data-i18n="contact.whatsapp.title">WhatsApp</h3>
+                                    <p><a class="contato-value" href="https://wa.me/5524999402412" target="_blank" rel="noopener noreferrer">+55 (24) 99940-2412</a></p>
+                                </div>
+                            </article>
+                            <article class="contato-item" role="listitem">
+                                <i class="fas fa-envelope contato-icon" aria-hidden="true"></i>
+                                <div class="contato-details">
+                                    <h3 data-i18n="contact.email.title">Email</h3>
+                                    <p><a class="contato-value" href="mailto:contato@elevatebr.org">contato@elevatebr.org</a></p>
+                                </div>
+                            </article>
+                            <article class="contato-item" role="listitem">
+                                <i class="fas fa-clock contato-icon" aria-hidden="true"></i>
+                                <div class="contato-details">
+                                    <h3 data-i18n="contact.hours.title">Business Hours</h3>
+                                    <p data-i18n="contact.hours.text">Monday to Friday: 9am to 6pm</p>
+                                </div>
+                            </article>
                         </div>
-                        <div class="contato-item">
-                            <div class="contato-icon"><i class="fab fa-whatsapp"></i></div>
-                            <div class="contato-details">
-                                <h3 data-i18n="contact.whatsapp.title">WhatsApp</h3>
-                                <p>+55 (24) 99940-2412</p>
-                            </div>
-                        </div>
-                        <div class="contato-item">
-                            <div class="contato-icon"><i class="fas fa-envelope"></i></div>
-                            <div class="contato-details">
-                                <h3 data-i18n="contact.email.title">Email</h3>
-                                <p>contato@elevatebr.org</p>
-                            </div>
-                        </div>
-                        <div class="contato-item">
-                            <div class="contato-icon"><i class="fas fa-clock"></i></div>
-                            <div class="contato-details">
-                                <h3 data-i18n="contact.hours.title">Business Hours</h3>
-                                <p data-i18n="contact.hours.text">Monday to Friday: 9am to 6pm</p>
-                            </div>
+                        <div class="contato-actions">
+                            <a href="https://wa.me/5524999402412" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="contact.cta.whatsapp">Chat on WhatsApp</a>
+                            <a href="mailto:contato@elevatebr.org" class="btn btn-outline" data-i18n="contact.cta.email">Send email</a>
                         </div>
                     </div>
-                </div>
-                <div class="mapa-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.052392534673!2d-44.448059023900235!3d-22.464665379568697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9e7f12a881c6ad%3A0xe44d17bf8b6c86c6!2sElevate%20Inova%C3%A7%C3%B5es%20%26%20Coworking!5e0!3m2!1spt-BR!2sbr!4v1776444237672!5m2!1spt-BR!2sbr"
-                        title="Elevate Inovações &amp; Coworking — map"
-                        width="600"
-                        height="450"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="mapa-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.052392534673!2d-44.448059023900235!3d-22.464665379568697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9e7f12a881c6ad%3A0xe44d17bf8b6c86c6!2sElevate%20Inova%C3%A7%C3%B5es%20%26%20Coworking!5e0!3m2!1spt-BR!2sbr!4v1776444237672!5m2!1spt-BR!2sbr"
+                            title="Elevate Inovações &amp; Coworking — map"
+                            loading="lazy"
+                            allowfullscreen=""
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
