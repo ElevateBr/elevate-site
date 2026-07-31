@@ -55,11 +55,6 @@ class SiteInitializer {
 
     startManagers() {
         try {
-            // Inicializar Products Manager
-            if (!window.productsManager) {
-                window.productsManager = new ProductsManager();
-            }
-
             // Inicializar Services Manager
             if (!window.servicesManager) {
                 window.servicesManager = new ServicesManager();
