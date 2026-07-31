@@ -12,6 +12,7 @@ class I18n {
             pt: {
                 // Navegação
                 'nav.home': 'Home',
+                'nav.about': 'Quem Somos',
                 'nav.products': 'Produtos',
                 'nav.services': 'Serviços',
                 'nav.partners': 'Parceiros',
@@ -20,9 +21,9 @@ class I18n {
                 'nav.contact': 'Contato',
 
                 // Hero Section
-                'hero.title.part1': 'Projetos desafiadores exigem',
-                'hero.title.part2': 'profissionais visionários',
-                'hero.subtitle': 'Software House especializada em soluções empresariais inovadoras. Transformamos ideias em realidade através da tecnologia de ponta.',
+                'hero.title.part1': 'Elevamos ideias.',
+                'hero.title.part2': 'Impulsionamos resultados.',
+                'hero.subtitle': '',
                 'hero.btn.services': 'Nossos Serviços',
                 'hero.btn.contact': 'Fale Conosco',
                 'hero.card.innovation': 'Inovação',
@@ -31,6 +32,7 @@ class I18n {
                 'hero.card.partnership': 'Parceria',
                 'hero.card.synergy': 'Sinergia',
                 'hero.specializations.title': 'Especializações',
+                'hero.specializations.subtitle': 'Tecnologias e stacks em que nossa equipe atua com excelência.',
                 'hero.specializations.sap': 'SAP',
                 'hero.specializations.open': 'Open Source',
                 'hero.specializations.sap.btp': 'SAP BTP',
@@ -41,6 +43,17 @@ class I18n {
                 'hero.specializations.open.react.mobile': 'React Mobile',
                 'hero.specializations.open.nodejs': 'Node.js',
                 'hero.specializations.open.java': 'Java',
+
+                // Quem Somos
+                'about.title': 'Quem Somos',
+                'about.subtitle': 'Elevando negócios com tecnologia, parceria, SaaS e excelência técnica.',
+                'about.text': 'Somos uma Software House com sede em Resende (RJ), focada em soluções empresariais e no desenvolvimento de produtos SaaS que combinam rigor técnico e visão de negócio. Do desenho da arquitetura à entrega em produção, sempre em parceria próxima com nossos clientes.',
+                'about.mission.title': 'Missão',
+                'about.mission.text': 'Entregar soluções tecnológicas que gerem impacto real, com qualidade, agilidade e proximidade.',
+                'about.vision.title': 'Visão',
+                'about.vision.text': 'Ser referência em projetos desafiadores que exigem profissionais visionários e parcerias de longo prazo.',
+                'about.values.title': 'Como trabalhamos',
+                'about.values.text': 'Transparência, colaboração e melhoria contínua em cada entrega — do discovery ao suporte.',
 
                 // Produtos
                 'products.title': 'Nossos Produtos',
@@ -118,6 +131,9 @@ class I18n {
                 'contact.email.title': 'Email',
                 'contact.hours.title': 'Horário de Atendimento',
                 'contact.hours.text': 'Segunda a Sexta: 9h às 18h',
+                'contact.map.link': 'Ver no mapa',
+                'contact.cta.whatsapp': 'Falar no WhatsApp',
+                'contact.cta.email': 'Enviar e-mail',
 
                 // Formulário
                 'form.name': 'Nome',
@@ -142,6 +158,7 @@ class I18n {
             en: {
                 // Navigation
                 'nav.home': 'Home',
+                'nav.about': 'About Us',
                 'nav.products': 'Products',
                 'nav.services': 'Services',
                 'nav.partners': 'Partners',
@@ -150,9 +167,9 @@ class I18n {
                 'nav.contact': 'Contact',
 
                 // Hero Section
-                'hero.title.part1': 'Challenging projects demand',
-                'hero.title.part2': 'visionary professionals',
-                'hero.subtitle': 'Software House specialized in innovative business solutions. We transform ideas into reality through cutting-edge technology.',
+                'hero.title.part1': 'We elevate ideas.',
+                'hero.title.part2': 'We drive results.',
+                'hero.subtitle': '',
                 'hero.btn.services': 'Our Services',
                 'hero.btn.contact': 'Contact Us',
                 'hero.card.innovation': 'Innovation',
@@ -161,6 +178,7 @@ class I18n {
                 'hero.card.partnership': 'Partnership',
                 'hero.card.synergy': 'Synergy',
                 'hero.specializations.title': 'Specializations',
+                'hero.specializations.subtitle': 'Technologies and stacks our team excels in.',
                 'hero.specializations.sap': 'SAP',
                 'hero.specializations.open': 'Open Source',
                 'hero.specializations.sap.btp': 'SAP BTP',
@@ -171,6 +189,17 @@ class I18n {
                 'hero.specializations.open.react.mobile': 'React Mobile',
                 'hero.specializations.open.nodejs': 'Node.js',
                 'hero.specializations.open.java': 'Java',
+
+                // About Us
+                'about.title': 'About Us',
+                'about.subtitle': 'Elevating businesses through technology, partnership, SaaS, and technical excellence.',
+                'about.text': 'We are a Software House based in Resende, Brazil, focused on enterprise solutions and SaaS product development that combine technical rigor with business vision. From architecture design to production delivery, always in close partnership with our clients.',
+                'about.mission.title': 'Mission',
+                'about.mission.text': 'Deliver technology solutions that create real impact, with quality, agility, and proximity.',
+                'about.vision.title': 'Vision',
+                'about.vision.text': 'To be a reference in challenging projects that demand visionary professionals and long-term partnerships.',
+                'about.values.title': 'How we work',
+                'about.values.text': 'Transparency, collaboration, and continuous improvement in every delivery—from discovery to support.',
 
                 // Products
                 'products.title': 'Our Products',
@@ -248,6 +277,9 @@ class I18n {
                 'contact.email.title': 'Email',
                 'contact.hours.title': 'Business Hours',
                 'contact.hours.text': 'Monday to Friday: 9am to 6pm',
+                'contact.map.link': 'View on map',
+                'contact.cta.whatsapp': 'Chat on WhatsApp',
+                'contact.cta.email': 'Send email',
 
                 // Form
                 'form.name': 'Name',
@@ -272,6 +304,7 @@ class I18n {
             es: {
                 // Navegación
                 'nav.home': 'Inicio',
+                'nav.about': 'Quiénes Somos',
                 'nav.products': 'Productos',
                 'nav.services': 'Servicios',
                 'nav.partners': 'Socios',
@@ -280,9 +313,9 @@ class I18n {
                 'nav.contact': 'Contacto',
 
                 // Sección Hero
-                'hero.title.part1': 'Los proyectos desafiantes exigen',
-                'hero.title.part2': 'profesionales visionarios',
-                'hero.subtitle': 'Software House especializada en soluciones empresariales innovadoras. Transformamos ideas en realidad a través de tecnología de vanguardia.',
+                'hero.title.part1': 'Elevamos ideas.',
+                'hero.title.part2': 'Impulsamos resultados.',
+                'hero.subtitle': '',
                 'hero.btn.services': 'Nuestros Servicios',
                 'hero.btn.contact': 'Contáctanos',
                 'hero.card.innovation': 'Innovación',
@@ -291,6 +324,7 @@ class I18n {
                 'hero.card.partnership': 'Alianza',
                 'hero.card.synergy': 'Sinergia',
                 'hero.specializations.title': 'Especializaciones',
+                'hero.specializations.subtitle': 'Tecnologías y stacks en los que nuestro equipo destaca.',
                 'hero.specializations.sap': 'SAP',
                 'hero.specializations.open': 'Open Source',
                 'hero.specializations.sap.btp': 'SAP BTP',
@@ -301,6 +335,17 @@ class I18n {
                 'hero.specializations.open.react.mobile': 'React Mobile',
                 'hero.specializations.open.nodejs': 'Node.js',
                 'hero.specializations.open.java': 'Java',
+
+                // Quiénes Somos
+                'about.title': 'Quiénes Somos',
+                'about.subtitle': 'Elevando negocios con tecnología, alianza, SaaS y excelencia técnica.',
+                'about.text': 'Somos una Software House con sede en Resende (RJ), enfocada en soluciones empresariales y en el desarrollo de productos SaaS que combinan rigor técnico y visión de negocio. Del diseño de arquitectura a la entrega en producción, siempre en estrecha alianza con nuestros clientes.',
+                'about.mission.title': 'Misión',
+                'about.mission.text': 'Entregar soluciones tecnológicas con impacto real, con calidad, agilidad y cercanía.',
+                'about.vision.title': 'Visión',
+                'about.vision.text': 'Ser referencia en proyectos desafiantes que exigen profesionales visionarios y alianzas de largo plazo.',
+                'about.values.title': 'Cómo trabajamos',
+                'about.values.text': 'Transparencia, colaboración y mejora continua en cada entrega — del discovery al soporte.',
 
                 'topics.loading': 'Cargando novedades...',
 
@@ -380,6 +425,9 @@ class I18n {
                 'contact.email.title': 'Email',
                 'contact.hours.title': 'Horario de Atención',
                 'contact.hours.text': 'Lunes a Viernes: 9h a 18h',
+                'contact.map.link': 'Ver en el mapa',
+                'contact.cta.whatsapp': 'Hablar por WhatsApp',
+                'contact.cta.email': 'Enviar correo',
 
                 // Formulario
                 'form.name': 'Nombre',
@@ -404,6 +452,7 @@ class I18n {
             it: {
                 // Navigazione
                 'nav.home': 'Home',
+                'nav.about': 'Chi Siamo',
                 'nav.products': 'Prodotti',
                 'nav.services': 'Servizi',
                 'nav.partners': 'Partner',
@@ -412,9 +461,9 @@ class I18n {
                 'nav.contact': 'Contatto',
 
                 // Sezione Hero
-                'hero.title.part1': 'Progetti impegnativi richiedono',
-                'hero.title.part2': 'professionisti visionari',
-                'hero.subtitle': 'Software House specializzata in soluzioni aziendali innovative. Trasformiamo idee in realtà attraverso la tecnologia all’avanguardia.',
+                'hero.title.part1': 'Eleviamo le idee.',
+                'hero.title.part2': 'Impulsioniamo i risultati.',
+                'hero.subtitle': '',
                 'hero.btn.services': 'I Nostri Servizi',
                 'hero.btn.contact': 'Contattaci',
                 'hero.card.innovation': 'Innovazione',
@@ -423,6 +472,7 @@ class I18n {
                 'hero.card.partnership': 'Partnership',
                 'hero.card.synergy': 'Sinergia',
                 'hero.specializations.title': 'Specializzazioni',
+                'hero.specializations.subtitle': 'Tecnologie e stack in cui il nostro team eccelle.',
                 'hero.specializations.sap': 'SAP',
                 'hero.specializations.open': 'Open Source',
                 'hero.specializations.sap.btp': 'SAP BTP',
@@ -433,6 +483,17 @@ class I18n {
                 'hero.specializations.open.react.mobile': 'React Mobile',
                 'hero.specializations.open.nodejs': 'Node.js',
                 'hero.specializations.open.java': 'Java',
+
+                // Chi Siamo
+                'about.title': 'Chi Siamo',
+                'about.subtitle': 'Elevare i business con tecnologia, partnership, SaaS ed eccellenza tecnica.',
+                'about.text': 'Siamo una Software House con sede a Resende (RJ), focalizzata su soluzioni enterprise e sullo sviluppo di prodotti SaaS che uniscono rigore tecnico e visione di business. Dalla progettazione dell’architettura alla messa in produzione, sempre in stretta partnership con i nostri clienti.',
+                'about.mission.title': 'Missione',
+                'about.mission.text': 'Fornire soluzioni tecnologiche con impatto reale, con qualità, agilità e vicinanza.',
+                'about.vision.title': 'Visione',
+                'about.vision.text': 'Essere un riferimento in progetti impegnativi che richiedono professionisti visionari e partnership durature.',
+                'about.values.title': 'Come lavoriamo',
+                'about.values.text': 'Trasparenza, collaborazione e miglioramento continuo in ogni consegna — dal discovery al supporto.',
 
                 // Prodotti
                 'products.title': 'I Nostri Prodotti',
@@ -510,6 +571,9 @@ class I18n {
                 'contact.email.title': 'Email',
                 'contact.hours.title': 'Orari di Apertura',
                 'contact.hours.text': 'Dal lunedì al venerdì: 9:00 - 18:00',
+                'contact.map.link': 'Vedi sulla mappa',
+                'contact.cta.whatsapp': 'Scrivi su WhatsApp',
+                'contact.cta.email': 'Invia email',
 
                 // Modulo
                 'form.name': 'Nome',

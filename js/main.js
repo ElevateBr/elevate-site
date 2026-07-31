@@ -43,9 +43,35 @@ function initLocalizedMobileHeaderOffset() {
 
 // Navigation functionality
 function initNavigation() {
+    const header = document.querySelector('.header');
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('section[id]');
     const navbar = document.querySelector('.navbar');
+
+    if (header) {
+        const hero = document.querySelector('#home.hero, main > section.hero');
+
+        if (hero) {
+            header.classList.add('header--has-hero');
+        }
+
+        const HEADER_FADE_PX = 100;
+
+        const updateHeaderScroll = () => {
+            if (hero) {
+                const scrollY = window.scrollY;
+                const progress = scrollY <= 0 ? 0 : Math.min(1, scrollY / HEADER_FADE_PX);
+                header.style.setProperty('--header-progress', String(progress));
+            } else {
+                header.style.setProperty('--header-progress', '1');
+            }
+        };
+
+        updateHeaderScroll();
+        window.addEventListener('scroll', updateHeaderScroll, { passive: true });
+        window.addEventListener('resize', updateHeaderScroll);
+        window.addEventListener('load', updateHeaderScroll);
+    }
     const navMenu = document.querySelector('.navbar-nav');
     const navToggle = document.querySelector('.navbar-toggle');
     const langToggle = document.querySelector('.lang-toggle');
@@ -172,25 +198,39 @@ function initSmoothScrolling() {
     });
 }
 
-// Scroll effects
+// Scroll effects — conteúdo carregado via fetch deve chamar observeAnimatedElements depois
+let scrollAnimationObserver = null;
+
 function initScrollEffects() {
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-    
-    const observer = new IntersectionObserver((entries) => {
+
+    scrollAnimationObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate-in');
             }
         });
     }, observerOptions);
-    
-    // Observe elements for animation
-    const animateElements = document.querySelectorAll('.servico-card, .parceiro-card, .vaga-card, .topic-card, .product-card');
-    animateElements.forEach(el => observer.observe(el));
+
+    observeAnimatedElements(document.querySelectorAll(
+        '.servico-card, .parceiro-card, .vaga-card, .topic-card, .product-card, .product-section'
+    ));
 }
+
+function observeAnimatedElements(elements) {
+    if (!scrollAnimationObserver || !elements) return;
+    const list = elements.length !== undefined ? elements : [elements];
+    list.forEach((el) => {
+        if (el instanceof Element) {
+            scrollAnimationObserver.observe(el);
+        }
+    });
+}
+
+window.observeAnimatedElements = observeAnimatedElements;
 
 
 
@@ -362,53 +402,6 @@ const styleSheet = document.createElement('style');
 styleSheet.textContent = notificationStyles;
 document.head.appendChild(styleSheet);
 
-// Add CSS for mobile menu
-const mobileMenuStyles = `
-    @media (max-width: 768px) {
-        .navbar-menu {
-            position: fixed;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: white;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            padding: 2rem;
-            transform: translateY(-100%);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-        
-        .navbar-menu.active {
-            transform: translateY(0);
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .navbar-nav {
-            flex-direction: column;
-            gap: 1rem;
-        }
-        
-        .navbar-toggle.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-        
-        .navbar-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-        
-        .navbar-toggle.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -6px);
-        }
-    }
-`;
-
-// Inject mobile menu styles
-const mobileStyleSheet = document.createElement('style');
-mobileStyleSheet.textContent = mobileMenuStyles;
-document.head.appendChild(mobileStyleSheet);
-
 // Add CSS for animations
 const animationStyles = `
     .animate-in {
@@ -434,12 +427,19 @@ const animationStyles = `
         opacity: 0;
         transform: translateY(30px);
     }
+
+    /* product-section: visível por padrão (carrega após fetch) */
+    .product-section:not(.animate-in) {
+        opacity: 1;
+        transform: none;
+    }
     
     .servico-card.animate-in,
     .parceiro-card.animate-in,
     .vaga-card.animate-in,
     .topic-card.animate-in,
-    .product-card.animate-in {
+    .product-card.animate-in,
+    .product-section.animate-in {
         opacity: 1;
         transform: translateY(0);
     }
