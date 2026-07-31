@@ -9,7 +9,7 @@ function initSplash() {
         setTimeout(() => splash.remove(), 600);
     }
 
-    const duration = 2500;
+    const duration = 300;
     const timer = setTimeout(hideSplash, duration);
 
     splash.addEventListener('click', () => {
