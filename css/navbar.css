@@ -160,6 +160,23 @@
     outline-offset: 2px;
 }
 
+.nav-link--external {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.nav-external-icon {
+    font-size: 0.62em;
+    opacity: 0.45;
+    transition: opacity 0.2s ease;
+}
+
+.nav-link--external:hover .nav-external-icon,
+.nav-link--external:focus-visible .nav-external-icon {
+    opacity: 0.9;
+}
+
 .language-selector {
     display: flex;
     align-items: center;
@@ -322,6 +339,12 @@
         font-size: 1.05rem;
         text-align: center;
         border-radius: 12px;
+    }
+
+    .nav-link--external {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     .nav-link::after {

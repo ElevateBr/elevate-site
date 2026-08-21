@@ -58,7 +58,12 @@
                     <li class="nav-item"><a href="#servicos" class="nav-link" data-i18n="nav.services">Servicios</a></li>
                     <li class="nav-item"><a href="#parceiros" class="nav-link" data-i18n="nav.partners">Socios</a></li>
                     <li class="nav-item"><a href="#blog" class="nav-link" data-i18n="nav.blog">Blog</a></li>
-                    <li class="nav-item"><a href="#recrutamento" class="nav-link" data-i18n="nav.careers">Carreras</a></li>
+                    <li class="nav-item">
+                        <a href="https://app.tapinout.com/careers/e23a7a60-a759-4b96-96fe-ba8fd3de0bf7" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer" data-i18n-aria="nav.careers_external" aria-label="Carreras, se abre en una nueva pestaña">
+                            <span data-i18n="nav.careers">Carreras</span>
+                            <i class="fas fa-arrow-up-right-from-square nav-external-icon" aria-hidden="true"></i>
+                        </a>
+                    </li>
                     <li class="nav-item"><a href="#contato" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
                 </ul>
                 <button class="lang-toggle" type="button" aria-label="Abrir idiomas" aria-expanded="false">
@@ -240,20 +245,6 @@
             </div>
         </section>
 
-        <section id="recrutamento" class="recrutamento">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title" data-i18n="careers.title">Únete a Nuestro Equipo</h2>
-                    <p class="section-subtitle" data-i18n="careers.subtitle">Haz crecer tu carrera con proyectos desafiantes y visionarios.</p>
-                </div>
-                <div class="vagas-grid" id="vagas-container"></div>
-                <div class="vagas-loading" id="vagas-loading">
-                    <div class="loading-spinner"></div>
-                    <p data-i18n="careers.loading">Cargando oportunidades...</p>
-                </div>
-            </div>
-        </section>
-
         <section id="contato" class="contato">
             <div class="container">
                 <div class="section-header">
@@ -311,7 +302,7 @@
         </section>
     </main>
 
-    <div id="floating-careers-btn" class="floating-careers-btn" style="display: none;">
+    <a id="floating-careers-btn" class="floating-careers-btn" href="https://app.tapinout.com/careers/e23a7a60-a759-4b96-96fe-ba8fd3de0bf7" target="_blank" rel="noopener noreferrer" data-i18n-aria="nav.careers_external" aria-label="Carreras, se abre en una nueva pestaña">
         <div class="floating-btn-content">
             <div class="floating-btn-icon"><i class="fas fa-briefcase"></i></div>
             <div class="floating-btn-text">
@@ -319,8 +310,8 @@
                 <span class="floating-btn-subtitle" data-i18n="floating.careers.subtitle">Únete a nuestro equipo</span>
             </div>
         </div>
-        <div class="floating-btn-arrow"><i class="fas fa-chevron-right"></i></div>
-    </div>
+        <div class="floating-btn-arrow"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></div>
+    </a>
 
     <footer class="footer">
         <div class="container">

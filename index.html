@@ -119,7 +119,12 @@
                     <li class="nav-item"><a href="#servicos" class="nav-link" data-i18n="nav.services">Serviços</a></li>
                     <li class="nav-item"><a href="#parceiros" class="nav-link" data-i18n="nav.partners">Parceiros</a></li>
                     <li class="nav-item"><a href="#blog" class="nav-link" data-i18n="nav.blog">Blog</a></li>
-                    <li class="nav-item"><a href="#recrutamento" class="nav-link" data-i18n="nav.careers">Carreiras</a></li>
+                    <li class="nav-item">
+                        <a href="https://app.tapinout.com/careers/e23a7a60-a759-4b96-96fe-ba8fd3de0bf7" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer" data-i18n-aria="nav.careers_external" aria-label="Carreiras, abre em uma nova aba">
+                            <span data-i18n="nav.careers">Carreiras</span>
+                            <i class="fas fa-arrow-up-right-from-square nav-external-icon" aria-hidden="true"></i>
+                        </a>
+                    </li>
                     <li class="nav-item"><a href="#contato" class="nav-link" data-i18n="nav.contact">Contato</a></li>
                 </ul>
                 <button class="lang-toggle" type="button" aria-label="Abrir idiomas" aria-expanded="false">
@@ -319,25 +324,6 @@
             </div>
         </section>
 
-        <!-- Recrutamento Section -->
-        <section id="recrutamento" class="recrutamento">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title" data-i18n="careers.title">JOIN OUR SOLUTION TEAMS</h2>
-                    <p class="section-subtitle" data-i18n="careers.subtitle">Se você quer fazer parte de uma equipe de excelentes profissionais para desenvolver projetos visionários e elevar sua carreira a um nível superior, esta é sua chance!</p>
-                </div>
-                
-                <div class="vagas-grid" id="vagas-container">
-                    <!-- Vagas will be loaded dynamically -->
-                </div>
-                
-                <div class="vagas-loading" id="vagas-loading">
-                    <div class="loading-spinner"></div>
-                    <p data-i18n="careers.loading">Carregando oportunidades...</p>
-                </div>
-            </div>
-        </section>
-
         <!-- Contato Section -->
         <section id="contato" class="contato">
             <div class="container">
@@ -398,7 +384,7 @@
     </main>
 
     <!-- Floating Careers Button -->
-    <div id="floating-careers-btn" class="floating-careers-btn" style="display: none;">
+    <a id="floating-careers-btn" class="floating-careers-btn" href="https://app.tapinout.com/careers/e23a7a60-a759-4b96-96fe-ba8fd3de0bf7" target="_blank" rel="noopener noreferrer" data-i18n-aria="nav.careers_external" aria-label="Carreiras, abre em uma nova aba">
         <div class="floating-btn-content">
             <div class="floating-btn-icon">
                 <i class="fas fa-briefcase"></i>
@@ -409,9 +395,9 @@
             </div>
         </div>
         <div class="floating-btn-arrow">
-            <i class="fas fa-chevron-right"></i>
+            <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
         </div>
-    </div>
+    </a>
 
     <!-- Footer -->
     <footer class="footer">
@@ -439,7 +425,12 @@
                         <li><a href="#produtos" data-i18n="nav.products">Produtos</a></li>
                         <li><a href="#servicos" data-i18n="nav.services">Serviços</a></li>
                         <li><a href="#parceiros" data-i18n="nav.partners">Parceiros</a></li>
-                        <li><a href="#recrutamento" data-i18n="nav.careers">Carreiras</a></li>
+                        <li>
+                            <a class="footer-link--external" href="https://app.tapinout.com/careers/e23a7a60-a759-4b96-96fe-ba8fd3de0bf7" target="_blank" rel="noopener noreferrer" data-i18n-aria="nav.careers_external" aria-label="Carreiras, abre em uma nova aba">
+                                <span data-i18n="nav.careers">Carreiras</span>
+                                <i class="fas fa-arrow-up-right-from-square footer-external-icon" aria-hidden="true"></i>
+                            </a>
+                        </li>
                         <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
                     </ul>
                 </div>

@@ -18,6 +18,7 @@ class I18n {
                 'nav.partners': 'Parceiros',
                 'nav.blog': 'Blog',
                 'nav.careers': 'Carreiras',
+                'nav.careers_external': 'Carreiras, abre em uma nova aba',
                 'nav.contact': 'Contato',
 
                 // Hero Section
@@ -115,7 +116,11 @@ class I18n {
                 // Carreiras
                 'careers.title': 'Trabalhe Conosco',
                 'careers.subtitle': 'Se você quer fazer parte de uma equipe de excelentes profissionais para desenvolver projetos visionários e elevar sua carreira a um nível superior, esta é sua chance!',
+                'careers.hint': 'As vagas são atualizadas em tempo real. Escolha uma oportunidade e candidate-se direto no formulário.',
                 'careers.loading': 'Carregando oportunidades...',
+                'careers.embed_title': 'Vagas abertas',
+                'careers.error': 'Não foi possível carregar as vagas aqui. Abra o quadro de oportunidades em uma nova aba.',
+                'careers.open_board': 'Abrir vagas em nova aba',
                 
                 // Vagas
                 'vagas.requirements': 'Requisitos',
@@ -164,6 +169,7 @@ class I18n {
                 'nav.partners': 'Partners',
                 'nav.blog': 'Blog',
                 'nav.careers': 'Careers',
+                'nav.careers_external': 'Careers, opens in a new tab',
                 'nav.contact': 'Contact',
 
                 // Hero Section
@@ -261,7 +267,11 @@ class I18n {
                 // Careers
                 'careers.title': 'Join Our Solution Teams',
                 'careers.subtitle': 'If you want to be part of a team of excellent professionals to develop visionary projects and elevate your career to a higher level, this is your chance!',
+                'careers.hint': 'Openings are updated in real time. Choose a role and apply directly in the form below.',
                 'careers.loading': 'Loading opportunities...',
+                'careers.embed_title': 'Open positions',
+                'careers.error': "We couldn't load the openings here. Open the careers board in a new tab.",
+                'careers.open_board': 'Open jobs in a new tab',
                 
                 // Jobs
                 'vagas.requirements': 'Requirements',
@@ -310,6 +320,7 @@ class I18n {
                 'nav.partners': 'Socios',
                 'nav.blog': 'Blog',
                 'nav.careers': 'Carreras',
+                'nav.careers_external': 'Carreras, se abre en una nueva pestaña',
                 'nav.contact': 'Contacto',
 
                 // Sección Hero
@@ -409,7 +420,11 @@ class I18n {
                 // Carreras
                 'careers.title': 'Únete a Nuestro Equipo',
                 'careers.subtitle': 'Si quieres ser parte de un equipo de excelentes profesionales para desarrollar proyectos visionarios y elevar tu carrera a un nivel superior, ¡esta es tu oportunidad!',
+                'careers.hint': 'Las vacantes se actualizan en tiempo real. Elige una oportunidad y postúlate directo en el formulario.',
                 'careers.loading': 'Cargando oportunidades...',
+                'careers.embed_title': 'Vacantes abiertas',
+                'careers.error': 'No pudimos cargar las vacantes aquí. Abre el tablero de oportunidades en una nueva pestaña.',
+                'careers.open_board': 'Abrir vacantes en una nueva pestaña',
                 
                 // Empleos
                 'vagas.requirements': 'Requisitos',
@@ -458,6 +473,7 @@ class I18n {
                 'nav.partners': 'Partner',
                 'nav.blog': 'Blog',
                 'nav.careers': 'Carriere',
+                'nav.careers_external': 'Carriere, si apre in una nuova scheda',
                 'nav.contact': 'Contatto',
 
                 // Sezione Hero
@@ -555,7 +571,11 @@ class I18n {
                 // Carriere
                 'careers.title': 'Unisciti ai Nostri Team di Soluzione',
                 'careers.subtitle': 'Se vuoi far parte di un team di professionisti eccellenti per sviluppare progetti visionari e portare la tua carriera a un livello superiore, questa è la tua occasione!',
+                'careers.hint': 'Le posizioni sono aggiornate in tempo reale. Scegli un\'opportunità e candidati direttamente nel modulo.',
                 'careers.loading': 'Caricamento opportunità...',
+                'careers.embed_title': 'Posizioni aperte',
+                'careers.error': 'Non è stato possibile caricare le posizioni qui. Apri la bacheca delle opportunità in una nuova scheda.',
+                'careers.open_board': 'Apri le posizioni in una nuova scheda',
 
                 // Offerte di lavoro
                 'vagas.requirements': 'Requisiti',
@@ -710,6 +730,14 @@ class I18n {
             const translation = this.translations[this.currentLang][key];
             if (translation) {
                 element.textContent = translation;
+            }
+        });
+
+        document.querySelectorAll('[data-i18n-aria]').forEach((element) => {
+            const key = element.getAttribute('data-i18n-aria');
+            const translation = this.translations[this.currentLang][key];
+            if (translation) {
+                element.setAttribute('aria-label', translation);
             }
         });
     }
